@@ -1,642 +1,205 @@
-# Aapla Kisan Design System & UI/UX Guidelines
+<div align="center">
 
-## Farmer-First, Bilingual, Fresh Commerce Interface
+# 🎨 Aapla Kisan Design System & UI/UX Guidelines
 
-This document defines the visual design direction, UI/UX principles, color palette, typography, component system, and role-based interface strategy for the Aapla Kisan Growth System.
+### Farmer-First, Bilingual, Fresh Commerce Interface
 
-The design system is built for a fresh produce platform serving farmers, vendors, consumers, B2B buyers, admin teams, and dark store operations teams.
+A visual design system for a fresh produce operating platform serving farmers, vendors, consumers, B2B buyers, admin teams, collection agents, and dark-store operators.
+
+<br>
+
+![Status](https://img.shields.io/badge/Status-Design%20System-1E7A34)
+![Theme](https://img.shields.io/badge/Theme-Farmer--First-2E8B57)
+![Language](https://img.shields.io/badge/Language-English%20%2B%20Marathi-2563EB)
+![Modules](https://img.shields.io/badge/Product%20Layers-4-F59E0B)
+![Portfolio](https://img.shields.io/badge/Portfolio-UI%2FUX%20Case%20Study-6B7280)
+
+</div>
 
 ---
 
-## 1. Design Vision
+<p align="center">
+  <img src="../assets/images/aapla-kisan-hero-preview.png" alt="Aapla Kisan Product System Preview" width="900">
+</p>
 
-Aapla Kisan should feel like a trusted local fresh produce platform that is simple enough for rural and semi-urban users, while structured enough for operations teams, admin teams, and B2B buyers.
+---
 
-The product experience should feel:
+## 🧭 Design Vision
+
+Aapla Kisan should feel like a trusted local fresh produce platform that is simple enough for rural and semi-urban users, while structured enough for admin, operations, B2B, and fulfilment teams.
+
+The design system is built around six experience goals.
 
 | Attribute | Meaning |
 |---|---|
-| **Fresh** | Reflects agriculture, produce, sustainability, and trust |
-| **Simple** | Easy for farmers, vendors, and consumers to understand |
-| **Bilingual** | English + Marathi support for local usability |
-| **Operational** | Clear dashboards, status labels, alerts, and action flows |
-| **Trustworthy** | Transparent onboarding, payouts, order status, and quality checks |
-| **Scalable** | Reusable cards, tables, dashboards, modules, and components |
+| 🌿 **Fresh** | Reflects agriculture, produce, sustainability, and trust |
+| ✅ **Simple** | Easy for farmers, vendors, consumers, and field teams to understand |
+| 🌐 **Bilingual** | English + Marathi support for local usability |
+| 🏬 **Operational** | Clear dashboards, status labels, alerts, picklists, and action flows |
+| 🔐 **Trustworthy** | Transparent onboarding, payouts, quality checks, and order status |
+| 📈 **Scalable** | Reusable cards, tables, dashboards, badges, modules, and components |
 
 ---
 
-## 2. Brand Personality
+# 📊 Repository-Based UI Coverage Metrics
 
-Aapla Kisan should not feel like a complex enterprise tool or a premium urban-only grocery app.
+These are current project coverage metrics based on the uploaded wireframe previews and public portfolio files.
 
-It should feel like a practical, local, and scalable fresh supply chain platform.
+| Product Layer | Screen Coverage | UX Priority |
+|---|---:|---|
+| 📱 Consumer App | 15 | Ordering, checkout, tracking, repeat purchase |
+| 👨‍🌾 Farmer / Vendor App | 10 | Onboarding, listing, stock, payout |
+| 🧑‍💼 Admin Panel | 9 | Governance, approvals, products, pricing, reports |
+| 🏬 Dark Store Platform | 6 | Picking, packing, dispatch, inventory |
 
-| Brand Trait | UI/UX Expression |
-|---|---|
-| **Farmer-first** | Simple onboarding, Marathi support, clear form labels |
-| **Fresh and natural** | Green palette, produce imagery, light backgrounds |
-| **Trust-led** | Verification, status badges, payout visibility, order tracking |
-| **Action-oriented** | Large buttons, clear CTAs, minimal confusion |
-| **Operations-ready** | Dashboards, queue views, inventory states, SLA alerts |
-| **Community-driven** | Local language, regional identity, accessible interface |
+```mermaid
+xyChart-beta
+    title "Current Wireframe Screen Coverage"
+    x-axis ["Consumer", "Farmer/Vendor", "Admin", "Dark Store"]
+    y-axis "Screens" 0 --> 16
+    bar [15, 10, 9, 6]
+```
+
+```mermaid
+pie title Product Layer Design Coverage
+    "Consumer App" : 15
+    "Farmer / Vendor App" : 10
+    "Admin Panel" : 9
+    "Dark Store Platform" : 6
+```
 
 ---
 
-## 3. Core Color Palette
+# 🎨 Core Color Palette
 
-The visual system is based on greens, light neutrals, and functional alert colors.
+The visual identity uses fresh greens, soft backgrounds, strong dark text, and operational status colors.
 
 | Usage | Color Name | Hex Code | Purpose |
 |---|---|---|---|
-| **Primary Action** | Seed Green | `#1E7A34` | Main CTA buttons, active navigation, primary actions |
-| **Freshness / Success** | Leaf Green | `#2E8B57` | Success states, verified badges, freshness indicators |
-| **Soft Background** | Farm Mist | `#EAF7EF` | Cards, sections, gentle background panels |
+| **Primary Action** | Seed Green | `#1E7A34` | Primary CTAs, active navigation, approval actions |
+| **Success / Freshness** | Leaf Green | `#2E8B57` | Verified, completed, accepted, fresh indicators |
+| **Soft Background** | Farm Mist | `#EAF7EF` | Cards, product surfaces, calm section backgrounds |
 | **Main Text** | Soil Black | `#1F2937` | Headings and main readable text |
 | **Secondary Text** | Market Gray | `#6B7280` | Helper text, descriptions, inactive labels |
-| **Page Background** | Clean White | `#F9FAFB` | App background and large empty spaces |
-| **Warning** | Harvest Amber | `#F59E0B` | Pending, low stock, delayed, attention needed |
-| **Error / Critical** | Tomato Red | `#EF4444` | Rejected, failed, cancelled, out of stock |
-| **Information** | Sky Info | `#2563EB` | Tracking, links, informational status |
+| **Warning** | Harvest Amber | `#F59E0B` | Pending, delayed, low stock, action needed |
+| **Error / Critical** | Tomato Red | `#EF4444` | Rejected, cancelled, failed, out-of-stock |
+| **Information** | Sky Info | `#2563EB` | Tracking, links, route states, information |
 
----
-
-## 4. Color Usage Rules
-
-### Primary Green
-
-Use `Seed Green` for important user actions.
-
-Examples:
-
-- Continue
-- Save & Continue
-- Submit Documents
-- Add to Cart
-- Confirm Pick
-- Complete Packing
-- Confirm Handover
-- Approve Farmer
-- Save Changes
-
-```text
-Background: #1E7A34
-Text: #FFFFFF
-Hover: #16652B
-Border Radius: 12px
+```mermaid
+pie title Design Token Usage Balance
+    "Fresh / Success Greens" : 35
+    "Neutral Backgrounds" : 25
+    "Text / Readability" : 20
+    "Warnings" : 10
+    "Errors" : 5
+    "Information" : 5
 ```
 
 ---
 
-### Success Green
+# 🧩 UI Components
 
-Use `Leaf Green` for positive states.
+<p align="center">
+  <img src="../assets/images/ui_components.png" alt="Aapla Kisan UI Components" width="850">
+</p>
 
-Examples:
+## Component Principles
 
-- Verified
-- In Stock
-- Completed
-- Accepted
-- Freshness Checked
-- Payment Completed
-- Order Delivered
-
-```text
-Background: #EAF7EF
-Text: #2E8B57
-Border: #2E8B57
-```
-
----
-
-### Warning Amber
-
-Use `Harvest Amber` for pending or attention states.
-
-Examples:
-
-- Pending Review
-- Low Stock
-- Delivery Delay
-- SLA Warning
-- Action Required
-- Exceptions Pending
-
-```text
-Background: #FFF7E6
-Text: #B45309
-Border: #F59E0B
-```
-
----
-
-### Error Red
-
-Use `Tomato Red` for critical or negative states.
-
-Examples:
-
-- Out of Stock
-- Failed KYC
-- Rejected Batch
-- Cancelled Order
-- Critical Issue
-- Payment Failed
-
-```text
-Background: #FEE2E2
-Text: #B91C1C
-Border: #EF4444
-```
-
----
-
-## 5. Typography System
-
-The interface should be clean, readable, and suitable for both English and Marathi.
-
-### Recommended Fonts
-
-| Usage | Font Recommendation |
+| Component | Design Direction |
 |---|---|
-| English UI | Inter, Poppins, Noto Sans |
-| Marathi UI | Noto Sans Devanagari |
-| Dashboard UI | Inter or Noto Sans |
-| Marketing Assets | Poppins + Noto Sans Devanagari |
+| **Buttons** | Large, rounded, clear action labels, strong contrast |
+| **Cards** | Product, farmer, order, metric, inventory, and alert cards |
+| **Badges** | Status-first scanability: verified, pending, rejected, packed, dispatched |
+| **Forms** | Short labels, helper text, step progress, low-friction uploads |
+| **Tables** | Admin and operations-focused rows with quick decision signals |
+| **Dashboards** | Metric-first, alert-driven, weekly review friendly |
 
 ---
 
-### Typography Rules
+# 🧾 Forms & Data Capture
 
-| Element | Style Direction |
-|---|---|
-| **Main Heading** | Bold, large, clear |
-| **Section Heading** | Semi-bold, medium-large |
-| **Body Text** | Regular, readable |
-| **Form Labels** | Medium weight |
-| **Helper Text** | Smaller, gray, simple |
-| **Button Text** | Semi-bold, short |
-| **Status Labels** | Bold enough to scan quickly |
-
----
-
-## 6. UI Component System
-
-## 6.1 Buttons
-
-### Primary Button
-
-Used for main actions.
-
-```text
-Background: #1E7A34
-Text: #FFFFFF
-Border Radius: 12px
-Font Weight: 600
-Padding: 12px 20px
-```
-
-Examples:
-
-- Continue
-- Save & Continue
-- Submit Documents
-- Add to Cart
-- Complete Packing
-
----
-
-### Secondary Button
-
-Used for supporting actions.
-
-```text
-Background: #EAF7EF
-Text: #1E7A34
-Border: 1px solid #1E7A34
-Border Radius: 12px
-```
-
-Examples:
-
-- View Details
-- Edit
-- Check Status
-- Load More
-- View Report
-
----
-
-### Danger Button
-
-Used for rejection or destructive actions.
-
-```text
-Background: #FEE2E2
-Text: #B91C1C
-Border: 1px solid #EF4444
-Border Radius: 12px
-```
-
-Examples:
-
-- Cancel Item
-- Reject Batch
-- Mark Out of Stock
-- Remove Product
-
----
-
-## 6.2 Cards
-
-Cards should be used for product items, farmer profiles, customer profiles, dashboard metrics, order details, inventory items, and alerts.
-
-```text
-Background: #FFFFFF
-Border: 1px solid #E5E7EB
-Border Radius: 16px
-Shadow: Soft
-Padding: 16px to 24px
-```
-
-### Card Types
-
-| Card Type | Use Case |
-|---|---|
-| **Product Card** | Product image, price, grade, add-to-cart |
-| **Farmer Card** | Farmer name, status, location, product type |
-| **Order Card** | Order ID, items, delivery slot, status |
-| **Metric Card** | Dashboard KPIs and quick numbers |
-| **Alert Card** | Low stock, pending approval, SLA risk |
-| **Inventory Card** | SKU availability, target quantity, stock state |
-
----
-
-## 6.3 Status Badges
-
-Status badges should help users scan information quickly.
-
-| Status | Color Direction |
-|---|---|
-| Verified | Green |
-| Pending | Amber |
-| Rejected | Red |
-| In Stock | Green |
-| Low Stock | Amber |
-| Out of Stock | Red |
-| Ready | Blue |
-| Picking | Amber |
-| Packed | Green |
-| Dispatched | Blue |
-| Delivered | Green |
-
----
-
-## 6.4 Forms
+<p align="center">
+  <img src="../assets/images/forms_template.png" alt="Aapla Kisan Form Template" width="850">
+</p>
 
 Forms should be simple, guided, and mobile-friendly.
 
-### Form Design Rules
+| Form Area | Data Captured | UX Rule |
+|---|---|---|
+| Farmer Basic Details | Name, mobile, address, city, pincode | Use short labels and Marathi helper text |
+| Business Details | Farmer/vendor type, farm/shop name, category | Keep choices easy to select |
+| KYC Upload | ID proof, bank proof, document image | Show upload progress and status |
+| Bank Details | Account number, IFSC, confirmation | Add validation and double-confirmation |
+| Product Upload | Name, category, image, unit, price | Use examples and clear units |
+| Stock Update | Quantity, availability, expected supply | Keep fast repeat entry possible |
 
-- Use short labels
-- Keep one main task per screen
-- Use progress indicators for long onboarding
-- Use helper text in Marathi where needed
-- Keep input fields large enough for mobile users
-- Avoid technical language
-- Show clear success and error states
-- Use examples inside placeholder text
+---
 
-### Form Examples
+# 📱 Role-Based Product Preview
 
-| Screen | Form Focus |
+| Product Layer | Preview | UX Focus |
+|---|---|---|
+| **Consumer App** | <img src="../assets/images/consumer-app-preview.png" width="180"> | Fresh discovery, order placement, tracking, repeat order |
+| **Farmer / Vendor App** | <img src="../assets/images/farmer-vendor-app-preview.png" width="180"> | Onboarding, product listing, stock update, payout clarity |
+| **Admin Panel** | <img src="../assets/images/admin-panel-preview.png" width="180"> | Approvals, pricing, categories, reports, issue control |
+| **Dark Store Platform** | <img src="../assets/images/dark-store-preview.png" width="180"> | Order queue, picklist, packing, dispatch, inventory |
+
+---
+
+# 🧭 Role-Based Navigation
+
+## Consumer Navigation
+
+Home → Categories → Search → Cart → Orders → Profile
+
+## Farmer / Vendor Navigation
+
+Dashboard → Products → Orders → Stock → Payout → Support → Profile
+
+## Admin Navigation
+
+Dashboard → Customers → Farmers → Approvals → Categories → Products → Orders → Reports → Settings
+
+## Dark Store Navigation
+
+Ops Dashboard → Orders → Picking → Packing → Dispatch → Inventory → Returns → Reports
+
+---
+
+# 🏬 Operational Dashboard Direction
+
+<p align="center">
+  <img src="../assets/images/dashboard_template.png" alt="Aapla Kisan Dashboard Template" width="850">
+</p>
+
+Operational dashboards should reduce decision time.
+
+| Dashboard Area | Required Signals |
 |---|---|
-| Farmer Basic Details | Name, mobile number, address, city, pincode |
-| Business Details | Farmer/vendor type, farm/shop name, category |
-| KYC Upload | ID proof, bank proof, document upload |
-| Bank Details | Account number, IFSC, confirmation |
-| Product Upload | Name, category, image, unit, price |
-| Stock Update | Quantity, availability, expected supply |
+| Order Queue | Pending, picking, packed, dispatched, delayed |
+| Inventory | Low stock, out-of-stock, ageing stock, SKU availability |
+| Quality | Accepted stock, rejected stock, complaint rate |
+| Fulfilment | Picking time, packing time, dispatch status |
+| Procurement | Declared vs actual supply, supplier reliability, price variance |
+| Governance | Daily alerts, weekly KPIs, escalation owners |
 
 ---
 
-## 7. Role-Based Navigation
+# ♿ Accessibility & Local Usability
 
-Navigation should change based on user role.
-
-## 7.1 Consumer App Navigation
-
-| Navigation Item | Purpose |
+| Guideline | Rule |
 |---|---|
-| Home | Fresh produce discovery |
-| Categories | Fruits, vegetables, premium, bundles |
-| Search | Find produce quickly |
-| Cart | Review selected items |
-| Orders | Track current and past orders |
-| Profile | Address, preferences, support |
+| Readability | Use strong contrast and readable font sizes |
+| Language | Support English + Marathi for local users |
+| Touch Comfort | Use large buttons and enough spacing |
+| Status Clarity | Use color + text, not color alone |
+| Low Cognitive Load | One main task per mobile screen |
+| Error Recovery | Use clear error messages and next action |
+| Field Users | Keep upload, stock update, and support flows simple |
 
 ---
 
-## 7.2 Farmer / Vendor App Navigation
-
-| Navigation Item | Purpose |
-|---|---|
-| Dashboard | Business overview |
-| Products | Add, edit, manage products |
-| Orders | View and accept order requests |
-| Stock | Update available supply |
-| Payout | View payments and earnings |
-| Support | Raise issues or ask for help |
-| Profile | Documents, bank, business details |
-
----
-
-## 7.3 Admin Panel Navigation
-
-| Navigation Item | Purpose |
-|---|---|
-| Dashboard | Key metrics and alerts |
-| Customers | B2C and B2B customer management |
-| Farmers | Farmer/vendor list and status |
-| Approvals | Onboarding verification |
-| Categories | Product category control |
-| Products | SKU and price management |
-| Orders | Order overview and monitoring |
-| Reports | Sales, inventory, and performance |
-| Settings | Roles, permissions, system controls |
-
----
-
-## 7.4 Dark Store Navigation
-
-| Navigation Item | Purpose |
-|---|---|
-| Ops Dashboard | Order queue and SLA status |
-| Orders | Order details and preparation |
-| Picking | Picklist and item selection |
-| Packing | Package verification |
-| Dispatch | Rider assignment and handover |
-| Inventory | Stock inward and adjustment |
-| Returns | Returned or rejected stock |
-| Reports | Daily fulfilment and inventory reports |
-
----
-
-# 8. Role-Based UX Guidelines
-
-## 8.1 Consumer App UX
-
-The consumer app should focus on fresh produce discovery, trust, and fast ordering.
-
-### Design Priorities
-
-- Clear product images
-- Simple category browsing
-- Visible prices
-- Easy add-to-cart
-- Delivery slot clarity
-- Freshness and quality trust badges
-- Simple checkout
-- Live tracking
-
-### Key Screens
-
-- Language selection
-- Login
-- Profile setup
-- Location selection
-- Landing page
-- Product listing
-- Cart
-- Address selection
-- Delivery slot
-- Live tracking
-- Order history
-
----
-
-## 8.2 Farmer / Vendor App UX
-
-The farmer/vendor app should focus on easy onboarding, clear business actions, and payout transparency.
-
-### Design Priorities
-
-- Large form fields
-- Step-by-step onboarding
-- Role selection
-- KYC clarity
-- Bank details guidance
-- Product upload simplicity
-- Stock update simplicity
-- Order request clarity
-- Payout transparency
-- Marathi helper text
-
-### Key Screens
-
-- Language selection
-- Login
-- Role selection
-- Basic details
-- Business details
-- KYC upload
-- Bank details
-- Seller dashboard
-- My products
-- Add product
-- Set price
-- Stock update
-- Order requests
-- Payout summary
-- Help and support
-- Sales report
-
----
-
-## 8.3 Admin Panel UX
-
-The admin panel should focus on control, visibility, and decision-making.
-
-### Design Priorities
-
-- High-level dashboard metrics
-- Farmer/customer visibility
-- Approval queues
-- Stock and order alerts
-- Pricing rule control
-- Issue tracking
-- Broadcast communication
-- Reports and role permissions
-
-### Key Screens
-
-- Admin login
-- Admin dashboard
-- Customer list
-- Farmer list
-- Onboarding approvals
-- Category management
-- Product list
-- Product details
-- Pricing rules
-- Orders overview
-- Order detail
-- Dark store monitor
-- Tickets/issues
-- Broadcast notifications
-- Sales/inventory reports
-- Roles and permissions
-- System settings
-
----
-
-## 8.4 Dark Store UX
-
-The dark store platform should focus on speed, accuracy, and operational discipline.
-
-### Design Priorities
-
-- Clear order queue
-- Visible SLA timers
-- Easy picklist scanning
-- Stock exception handling
-- Package verification
-- Dispatch queue clarity
-- Handover confirmation
-- Inventory visibility
-- Low-stock alerts
-
-### Key Screens
-
-- Ops login
-- Ops dashboard
-- Order details
-- Picklist
-- Out-of-stock action
-- Package verification
-- Dispatch queue
-- Handover confirmation
-- Inventory dashboard
-- Stock inward
-- Stock adjustment
-- Returns
-- Reports
-
----
-
-# 9. UX Principles
-
-## 9.1 Bilingual First
-
-The interface should support English and Marathi because the platform is expected to serve local farmers, vendors, consumers, and operations teams.
-
-### Rule
-
-Important actions should use bilingual labels where needed.
-
-Example:
-
-```text
-Save & Continue / जतन करा आणि पुढे जा
-```
-
----
-
-## 9.2 Mobile-First
-
-Consumer and farmer/vendor journeys should be designed mobile-first.
-
-### Rule
-
-Every screen should support fast actions:
-
-- Tap
-- Select
-- Upload
-- Confirm
-- Track
-- Call support
-- Check status
-
----
-
-## 9.3 Operational Clarity
-
-Admin and dark store interfaces should reduce confusion.
-
-### Rule
-
-Each operational screen should clearly show:
-
-- Order ID
-- Status
-- Quantity
-- SKU
-- Bin/location
-- SLA timer
-- Assigned person
-- Exception status
-- Next action
-
----
-
-## 9.4 Trust and Transparency
-
-The platform should build trust with both farmers and customers.
-
-### Rule
-
-Clearly show:
-
-- Quality grade
-- Payment status
-- Order status
-- Delivery status
-- Rejection reason
-- Payout summary
-- Complaint status
-- Support option
-
----
-
-## 9.5 Reduce Cognitive Load
-
-The product should not overload users with too much information at once.
-
-### Rule
-
-Use:
-
-- Short labels
-- Step indicators
-- Cards
-- Icons
-- Status badges
-- Clear primary buttons
-- Progressive disclosure
-
----
-
-# 10. Accessibility Guidelines
-
-The interface should be accessible for users with different levels of digital comfort.
-
-## Rules
-
-- Maintain strong text contrast
-- Use readable font sizes
-- Do not rely only on color for status
-- Use icons with labels
-- Keep form labels visible
-- Use clear error messages
-- Avoid very small Marathi text
-- Keep buttons touch-friendly
-- Avoid long paragraphs on mobile screens
-- Use simple words over complex technical terms
-
----
-
-# 11. Design System Summary
+# 🧠 UX Principle Map
 
 ```mermaid
 mindmap
@@ -650,40 +213,34 @@ mindmap
       Easy checkout
       Order tracking
     Admin-ready
-      Dashboards
       Approvals
+      Pricing control
       Reports
     Operations-ready
       Picklists
       Dispatch
       Inventory
     Trust-led
-      Status badges
       QC visibility
+      Status badges
       Transparent flows
 ```
 
 ---
 
-# 12. Design Keywords
+# 🏆 Skills Demonstrated
 
-The Aapla Kisan design system should be described as:
-
-```text
-Fresh
-Local
-Clean
-Trustworthy
-Farmer-first
-Bilingual
-Mobile-first
-Operational
-Scalable
-Accessible
-```
+| Skill Area | Demonstrated Through |
+|---|---|
+| **UI/UX Strategy** | Farmer-first, bilingual, operationally clear design system |
+| **Product Thinking** | Role-based navigation and multi-sided platform design |
+| **Visual Systems** | Palette, components, badges, cards, dashboards, forms |
+| **Accessibility** | Local language, contrast, mobile-first interaction design |
+| **Operations UX** | Picklists, order queue, inventory signals, SLA states |
+| **Analytics UX** | Dashboard-ready metric grouping and status hierarchy |
 
 ---
 
-## Public Portfolio Note
+# 📝 Public Portfolio Note
 
-This design system is created as a public-safe UI/UX guideline document for the Aapla Kisan portfolio case study. It is based on the project’s product screens, role-based workflows, and fresh supply chain operating model.
+This document is a public-safe design system created for portfolio presentation. It uses project-owned visual assets, wireframe previews, and repository-based planning metrics. It does not include confidential client implementation data.
