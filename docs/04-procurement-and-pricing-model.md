@@ -18,6 +18,12 @@ A strategic sourcing and pricing framework for balancing farmer/vendor trust, cu
 
 ---
 
+<p align="center">
+  <img src="../assets/images/sourcing_farm_gate.png" alt="Aapla Kisan Farm Gate Sourcing" width="850">
+</p>
+
+---
+
 ## 🧭 Executive View
 
 Fresh produce pricing is complex because market prices change frequently, while customers and B2B buyers prefer stable pricing, predictable quality, and reliable supply.
@@ -35,9 +41,7 @@ The goal is not to compete only on the cheapest price. The stronger goal is to b
 
 ---
 
-## 🎯 Strategic Objective
-
-The procurement and pricing model should help Aapla Kisan achieve:
+# 🎯 Strategic Objective
 
 | Objective | Business Reason |
 |---|---|
@@ -53,9 +57,7 @@ The procurement and pricing model should help Aapla Kisan achieve:
 
 # 🏗️ Procurement Model Overview
 
-Aapla Kisan should not depend on only one supply source.
-
-The model uses a **3-lane sourcing framework**.
+Aapla Kisan should not depend on only one supply source. The model uses a **3-lane sourcing framework**.
 
 ```mermaid
 flowchart TD
@@ -79,7 +81,7 @@ flowchart TD
 
 # 📊 Sourcing Mix Visualization
 
-> The chart below is a **sample pilot planning split**, not actual operating data. It shows how the sourcing model can be balanced during the pilot.
+> The chart below is a sample pilot planning split, not actual operating data. It shows how the sourcing model can be balanced during the pilot.
 
 ```mermaid
 pie title Sample Pilot Sourcing Mix
@@ -92,48 +94,15 @@ pie title Sample Pilot Sourcing Mix
 
 # 🛣️ Three-Lane Sourcing Model
 
-## Lane 1: Bulk / Stable Items
+<p align="center">
+  <img src="../assets/images/regional_distribution.png" alt="Regional Distribution Model" width="850">
+</p>
 
-Used for products with predictable demand and relatively stable consumption.
-
-| Area | Details |
-|---|---|
-| **Best For** | Staples, high-demand vegetables, predictable SKUs |
-| **Procurement Style** | Bulk buying or planned sourcing |
-| **Pricing Logic** | Fixed rate-card for a defined cycle |
-| **Main Benefit** | Improves price stability and availability |
-| **Main Risk** | Over-buying if demand is wrongly estimated |
-| **Control Needed** | Days-of-cover, wastage %, stock ageing |
-
----
-
-## Lane 2: Local Farmers / Short Shelf-Life Produce
-
-Used for fresh, seasonal, and fast-moving produce.
-
-| Area | Details |
-|---|---|
-| **Best For** | Leafy vegetables, seasonal fruits, fragile produce |
-| **Procurement Style** | Local farmer/vendor supply declaration |
-| **Pricing Logic** | Grade-based + market reference |
-| **Main Benefit** | Freshness, local sourcing, farmer participation |
-| **Main Risk** | Inconsistent quantity or quality |
-| **Control Needed** | Supplier reliability score, accepted vs rejected stock |
-
----
-
-## Lane 3: Vendor / Mandi Bridge
-
-Used as a backup supply source during early months or when local supply is insufficient.
-
-| Area | Details |
-|---|---|
-| **Best For** | Gap-fill supply, emergency stock, early pilot stage |
-| **Procurement Style** | Vendor or mandi bridge sourcing |
-| **Pricing Logic** | Market-linked |
-| **Main Benefit** | Protects fulfilment reliability |
-| **Main Risk** | Price volatility and variable quality |
-| **Control Needed** | Vendor comparison, price variance, quality rejection rate |
+| Lane | Best For | Pricing Logic | Main Benefit | Control Needed |
+|---|---|---|---|---|
+| **Lane 1: Bulk / Stable Items** | Staples, high-demand predictable SKUs | Fixed rate-card for defined cycle | Price stability and availability | Days-of-cover, wastage %, stock ageing |
+| **Lane 2: Local Farmers** | Leafy, seasonal, fragile, short shelf-life produce | Grade-based + market reference | Freshness and farmer participation | Supplier reliability, accepted vs rejected stock |
+| **Lane 3: Vendor / Mandi Bridge** | Gap-fill, emergency stock, early pilot stage | Market-linked | Protects fulfilment reliability | Vendor comparison, price variance, quality rejection rate |
 
 ---
 
@@ -170,8 +139,6 @@ flowchart LR
 
 # 📈 Pricing Decision Weightage
 
-> The values below are sample planning weights to show how pricing decisions can be evaluated. These are not actual market values.
-
 ```mermaid
 xyChart-beta
     title "Sample Pricing Decision Weightage"
@@ -179,6 +146,8 @@ xyChart-beta
     y-axis "Weightage %" 0 --> 40
     bar [30, 20, 15, 15, 10, 10]
 ```
+
+> These values are planning weights for visualization, not actual market values.
 
 ---
 
@@ -197,7 +166,11 @@ Farmer/vendor pricing should be transparent and linked to quality.
 
 ---
 
-## Grade-Based Payout Model
+# ✅ Grade-Based Payout Model
+
+<p align="center">
+  <img src="../assets/images/pass_fail_guide.png" alt="Pass Fail Produce Quality Guide" width="800">
+</p>
 
 | Grade | Meaning | Pricing Treatment |
 |---|---|---|
@@ -206,25 +179,19 @@ Farmer/vendor pricing should be transparent and linked to quality.
 | 🟡 **Grade C** | Usable but lower quality | Discounted payout or B2B/processing use |
 | 🔴 **Rejected** | Damaged, spoiled, or below acceptance | Not accepted / returned / documented |
 
+```mermaid
+pie title Sample Quality Allocation Logic
+    "Grade A - Premium" : 35
+    "Grade B - Standard" : 45
+    "Grade C - Cooking/B2B" : 12
+    "Rejected" : 8
+```
+
 ---
 
 # 🧺 B2C Pricing Logic
 
 B2C customers need trust, clarity, and price stability.
-
-## B2C Pricing Principles
-
-| Principle | Explanation |
-|---|---|
-| **Stable Price Band** | Avoid frequent daily price shocks |
-| **Clear Unit Pricing** | Show kg, bunch, dozen, pack, or basket clearly |
-| **Pre-Booking Benefit** | Reward customers who help predict demand |
-| **Freshness Trust** | Link price with quality and reliability |
-| **Transparent Checkout** | Avoid hidden charges or confusing delivery fees |
-
----
-
-## B2C Pricing Options
 
 | Option | Use Case | Strategic Benefit |
 |---|---|---|
@@ -237,22 +204,6 @@ B2C customers need trust, clarity, and price stability.
 ---
 
 # 🏪 B2B Pricing Logic
-
-B2B pricing should focus on consistency, reliability, and volume planning.
-
-## B2B Buyer Needs
-
-| Buyer Type | Main Need |
-|---|---|
-| 🍽️ Restaurants | Daily supply and cooking-grade options |
-| ☕ Cafes | Predictable quality and scheduled delivery |
-| 🏫 Hostels | Bulk quantity and stable pricing |
-| 🛒 Retailers | Regular replenishment |
-| 🏢 Institutions | Invoice-based records and reliable fulfilment |
-
----
-
-## B2B Pricing Options
 
 | Pricing Model | Use Case |
 |---|---|
@@ -267,9 +218,7 @@ B2B pricing should focus on consistency, reliability, and volume planning.
 
 # 🔁 Pre-Booking Model
 
-Pre-booking is one of the strongest levers in the Aapla Kisan model.
-
-It creates demand visibility before procurement decisions are made.
+Pre-booking creates demand visibility before procurement decisions are made.
 
 ```mermaid
 flowchart LR
@@ -283,22 +232,7 @@ flowchart LR
 
 ---
 
-## Why Pre-Booking Matters
-
-| Benefit | Impact |
-|---|---|
-| Predictable demand | Reduces blind procurement |
-| Better stock planning | Helps dark store prepare inventory |
-| Lower wastage | Reduces unsold perishable stock |
-| Better fulfilment | Improves availability and delivery planning |
-| Pricing advantage | Enables better rate planning for customers |
-| Supplier confidence | Helps farmers/vendors plan supply |
-
----
-
 # 📊 Sample Impact of Pre-Booking
-
-> The chart below shows a planning assumption: as pre-booking adoption increases, wastage can reduce because procurement becomes more predictable.
 
 ```mermaid
 xyChart-beta
@@ -308,43 +242,15 @@ xyChart-beta
     line [16, 14, 12, 10, 8, 6]
 ```
 
----
-
-# 📊 Pricing Governance
-
-Pricing should not be changed randomly.
-
-It should follow a defined review rhythm.
-
-| Pricing Control | Recommendation |
-|---|---|
-| **Price Review Cycle** | Weekly or fortnightly depending on product category |
-| **Market Benchmark** | Track local wholesale/mandi reference |
-| **Grade Consideration** | Adjust payout based on accepted quality |
-| **Inventory Risk** | Adjust based on stock ageing and wastage |
-| **B2B Commitments** | Protect rate cards for agreed cycle |
-| **Margin Check** | Review platform margin after procurement and delivery cost |
-| **Exception Approval** | High price movement should require admin approval |
-
----
-
-# 🧠 Pricing Decision Matrix
-
-| Situation | Recommended Action |
-|---|---|
-| High demand + low supply | Increase procurement priority, monitor price |
-| Low demand + high stock | Promote bundles, reduce future buying |
-| High wastage | Reduce procurement quantity, review SKU mix |
-| Frequent stockouts | Increase supplier base or buffer stock |
-| Quality complaints | Tighten grading and supplier review |
-| B2B recurring demand grows | Create rate card and scheduled supply |
-| Price variance increases | Review market benchmark and margins |
+> Planning assumption: as pre-booking adoption increases, wastage can reduce because procurement becomes more predictable.
 
 ---
 
 # 🏬 Inventory Health Connection
 
-Procurement and pricing must be connected to inventory health.
+<p align="center">
+  <img src="../assets/images/wastage_sensitivity_graph.png" alt="Wastage Sensitivity Graph" width="800">
+</p>
 
 | Inventory Metric | Pricing / Procurement Impact |
 |---|---|
@@ -356,16 +262,10 @@ Procurement and pricing must be connected to inventory health.
 | **Supplier Reliability** | Helps rank sourcing partners |
 | **Price Variance** | Measures difference between expected and actual procurement price |
 
----
-
-# 📉 Inventory Health Visualization
-
-> Sample planning targets for pilot monitoring.
-
 ```mermaid
 xyChart-beta
     title "Sample Inventory Health Targets"
-    x-axis ["Fill Rate", "Supplier Reliability", "On-Time Supply", "Low Stockout Control", "Wastage Control"]
+    x-axis ["Fill Rate", "Supplier Reliability", "On-Time Supply", "Stockout Control", "Wastage Control"]
     y-axis "Target %" 0 --> 100
     bar [90, 80, 85, 93, 90]
 ```
@@ -402,20 +302,9 @@ flowchart LR
 
 # 🧠 Consultant View
 
-The Aapla Kisan pricing model should not compete only on discounts.
+The Aapla Kisan pricing model should not compete only on discounts. Its stronger advantage is **predictability**.
 
-Its stronger advantage is **predictability**.
-
-A strong fresh produce model wins when it can create:
-
-- Predictable supply
-- Predictable demand
-- Predictable quality
-- Predictable fulfilment
-- Predictable pricing
-- Predictable margins
-
-This makes the platform more scalable than a discount-heavy grocery model.
+A strong fresh produce model wins when it can create predictable supply, predictable demand, predictable quality, predictable fulfilment, predictable pricing, and predictable margins.
 
 ---
 
@@ -436,16 +325,4 @@ This makes the platform more scalable than a discount-heavy grocery model.
 
 # 📝 Public Portfolio Note
 
-This is a public-safe procurement and pricing model created for portfolio presentation.
-
-The sample chart values are planning assumptions for visualization purposes. They are not actual pilot results. Actual values should be added only after real field execution or verified pilot data collection.
-
-Client-specific names, private budgets, payment terms, commercial proposal details, and confidential implementation terms have been removed or generalized.
-
----
-
-<div align="center">
-
-### Built as a proof-of-work strategy document for procurement design, pricing logic, data visualization, B2B planning, and fresh supply chain execution.
-
-</div>
+This is a public-safe procurement and pricing model created for portfolio presentation. The sample chart values are planning assumptions for visualization purposes and are not actual pilot results.
