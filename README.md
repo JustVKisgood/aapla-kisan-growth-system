@@ -4,7 +4,9 @@
 
 ### Product Strategy, Pilot Blueprint & Fresh Supply Chain Operating Model
 
-A proof-of-work case study for designing a farm-to-consumer and farm-to-business fresh produce platform that connects farmers, vendors, collection points, dark stores, consumers, and B2B buyers.
+A proof-of-work portfolio case study for designing a **farm-to-consumer + farm-to-business fresh produce platform** connecting farmers, vendors, collection points, dark stores, consumers, and B2B buyers.
+
+The project demonstrates product strategy, business analysis, UI/UX thinking, operations planning, SOP design, pilot execution, and data-led supply chain decision-making.
 
 <br>
 
@@ -14,11 +16,27 @@ A proof-of-work case study for designing a farm-to-consumer and farm-to-business
 ![Theme](https://img.shields.io/badge/UI%2FUX-Farmer--First%20Design-F59E0B)
 ![Built With](https://img.shields.io/badge/Built%20With-Product%20Strategy%20%2B%20Operations-6B7280)
 
+<br>
+
+**Quick Links:**  
+[📘 Business Model](docs/01-business-model.md) •
+[🎨 Design System](docs/00-design-system-and-ui-guidelines.md) •
+[🚀 Pilot Plan](docs/02-pilot-execution-plan.md) •
+[🧩 MVP Features](docs/03-mvp-feature-list.md) •
+[💰 Procurement Model](docs/04-procurement-and-pricing-model.md) •
+[🖼️ Visual Assets](assets/images)
+
 </div>
 
 ---
 
-## Executive Snapshot
+<p align="center">
+  <img src="assets/images/aapla-kisan-hero-preview.png" alt="Aapla Kisan Growth System Hero Preview" width="900">
+</p>
+
+---
+
+## 🚀 Executive Snapshot
 
 | Area | Details |
 |---|---|
@@ -31,9 +49,22 @@ A proof-of-work case study for designing a farm-to-consumer and farm-to-business
 
 ---
 
-## Case Study Positioning
+## 📱 Product Layer Preview
 
-Aapla Kisan is designed as a **fresh produce operating system**, not only as an ordering app.
+All four product layers have been wireframed and planned. These previews show the platform as a complete operating system, not just an ordering app.
+
+| Preview | Product Layer | Strategic Purpose |
+|---|---|---|
+| <img src="assets/images/consumer-app-preview.png" width="180"> | **Consumer App** | Mobile-first fresh produce browsing, cart, checkout, delivery slot, tracking, and order history |
+| <img src="assets/images/farmer-vendor-app-preview.png" width="180"> | **Farmer / Vendor App** | Supplier onboarding, KYC, product listing, stock update, order requests, payout, and reports |
+| <img src="assets/images/admin-panel-preview.png" width="180"> | **Admin Panel** | Governance, approvals, customer/farmer management, pricing, orders, reports, and roles |
+| <img src="assets/images/dark-store-preview.png" width="180"> | **Dark Store Platform** | Fulfilment, picking, packing, stock exceptions, dispatch, handover, and inventory control |
+
+---
+
+## 🧭 Case Study Positioning
+
+Aapla Kisan is designed as a **fresh produce operating system**, not only as a grocery ordering app.
 
 The case study explores how a structured platform can improve:
 
@@ -49,21 +80,21 @@ The case study explores how a structured platform can improve:
 
 ---
 
-## Problem Landscape
+## 🧩 Problem Landscape
 
 Fresh produce supply chains are difficult to scale because they are affected by demand uncertainty, price volatility, quality inconsistency, weak inventory control, and high wastage.
 
-| Stakeholder | Core Problem |
-|---|---|
-| **Farmers / Vendors** | Uncertain demand, price volatility, limited structured buyer access |
-| **Consumers** | Inconsistent quality, fluctuating prices, limited freshness trust |
-| **B2B Buyers** | Daily supply inconsistency, quality variation, procurement uncertainty |
-| **Operations Team** | Stockouts, wastage, dispatch delays, weak inventory visibility |
-| **Platform Team** | Need for governance, dashboards, SOPs, and role-based workflows |
+| Stakeholder | Core Problem | Platform Response |
+|---|---|---|
+| **Farmers / Vendors** | Uncertain demand, price volatility, limited structured buyer access | Onboarding, supply declaration, pricing logic, payout visibility |
+| **Consumers** | Inconsistent quality, fluctuating prices, limited freshness trust | Clear product listing, delivery slot, order tracking, quality promise |
+| **B2B Buyers** | Daily supply inconsistency, quality variation, procurement uncertainty | Recurring order model, rate-card logic, scheduled dispatch |
+| **Operations Team** | Stockouts, wastage, dispatch delays, weak inventory visibility | Dark store dashboard, picklist, stock inward, dispatch queue |
+| **Platform Team** | Need for governance, dashboards, SOPs, and role-based workflows | Admin panel, KPI tracking, approvals, reports, permissions |
 
 ---
 
-## Proposed Solution
+## 🏗️ Proposed Solution
 
 Aapla Kisan proposes a connected fresh supply chain model where produce moves through structured digital and operational checkpoints.
 
@@ -83,20 +114,57 @@ flowchart TD
 
 ---
 
-## Product Ecosystem
+## 🗂️ Repository Structure
 
-The platform is planned across four user-facing layers.
-
-| Product Layer | Purpose | Key Capabilities |
-|---|---|---|
-| **Consumer App** | Fresh produce discovery and ordering | Language selection, location, product listing, cart, checkout, delivery slot, tracking |
-| **Farmer / Vendor App** | Supplier onboarding and stock management | Role selection, KYC, bank details, product upload, stock update, order requests, payout |
-| **Admin Panel** | Governance, monitoring, approvals, and controls | Dashboard, customers, farmers, approvals, products, pricing, orders, reports, roles |
-| **Dark Store Platform** | Fulfilment, inventory, picking, packing, and dispatch | Order queue, picklist, exceptions, packing verification, dispatch, handover, inventory |
+```text
+aapla-kisan-growth-system/
+│
+├── README.md
+│
+├── assets/
+│   └── images/
+│       ├── aapla-kisan-hero-preview.png
+│       ├── consumer-app-preview.png
+│       ├── farmer-vendor-app-preview.png
+│       ├── admin-panel-preview.png
+│       ├── dark-store-preview.png
+│       ├── supply_chain_flow.png
+│       ├── user_journey_map.png
+│       ├── ui_components.png
+│       ├── analytics_template.png
+│       ├── dashboard_template.png
+│       ├── wastage_infographic.jpeg
+│       ├── wastage_sensitivity_graph.png
+│       ├── whatsapp_pilot_architecture.png
+│       └── more visual assets...
+│
+├── docs/
+│   ├── 00-design-system-and-ui-guidelines.md
+│   ├── 01-business-model.md
+│   ├── 02-pilot-execution-plan.md
+│   ├── 03-mvp-feature-list.md
+│   └── 04-procurement-and-pricing-model.md
+│
+├── wireframes/
+│   ├── consumer-app.pdf
+│   ├── farmer-vendor-app.pdf
+│   ├── admin-panel.pdf
+│   └── dark-store.pdf
+│
+├── diagrams/
+│   ├── system-flow.drawio
+│   ├── supply-chain-flow.pdf
+│   ├── system-design.pdf
+│   └── whatsapp-pilot-flow.pdf
+│
+└── marketing-assets/
+    ├── posters-en/
+    └── posters-mr/
+```
 
 ---
 
-## UI/UX Design Direction
+## 🎨 UI/UX Design Direction
 
 The product experience follows a **farmer-first, bilingual, clean, and operationally clear design language**.
 
@@ -111,7 +179,7 @@ The product experience follows a **farmer-first, bilingual, clean, and operation
 
 ---
 
-## Visual Theme
+## 🎨 Visual Theme
 
 | Usage | Color Name | Hex Code |
 |---|---|---|
@@ -126,7 +194,69 @@ The product experience follows a **farmer-first, bilingual, clean, and operation
 
 ---
 
-## Operating Model
+## 🖼️ UI & Design Asset Gallery
+
+These images represent the visual system, dashboard direction, UI components, forms, and user experience thinking behind the Aapla Kisan platform.
+
+| Visual | Asset | Purpose |
+|---|---|---|
+| <img src="assets/images/ui_components.png" width="180"> | **UI Components** | Buttons, cards, badges, forms, and reusable design components |
+| <img src="assets/images/forms_template.png" width="180"> | **Forms Template** | Form design direction for onboarding and operational data capture |
+| <img src="assets/images/dashboard_template.png" width="180"> | **Dashboard Template** | Dashboard style for monitoring KPIs, orders, inventory, and operations |
+| <img src="assets/images/analytics_template.png" width="180"> | **Analytics Template** | Analytics and reporting direction for pilot review |
+| <img src="assets/images/admin_dashboard.jpeg" width="180"> | **Admin Dashboard** | Admin-facing view for platform monitoring and controls |
+| <img src="assets/images/hub_manager_console.jpeg" width="180"> | **Hub Manager Console** | Hub/dark-store operations management concept |
+
+---
+
+## 🧑‍🌾 Supply Chain & Operations Asset Gallery
+
+These visuals show sourcing, collection, grading, logistics, crate handling, dark-store workflow, and regional distribution logic.
+
+| Visual | Asset | What It Shows |
+|---|---|---|
+| <img src="assets/images/supply_chain_flow.png" width="180"> | **Supply Chain Flow** | End-to-end movement from sourcing to fulfilment |
+| <img src="assets/images/sourcing_farm_gate.png" width="180"> | **Farm Gate Sourcing** | Farmer/vendor sourcing and collection logic |
+| <img src="assets/images/cluster_hub_grading.png" width="180"> | **Cluster Hub Grading** | Collection hub and grading workflow |
+| <img src="assets/images/integrated_logistics.png" width="180"> | **Integrated Logistics** | Movement between supplier, hub, and customer layers |
+| <img src="assets/images/regional_distribution.png" width="180"> | **Regional Distribution** | Zone-wise fulfilment and distribution thinking |
+| <img src="assets/images/urban_micro_hubs.png" width="180"> | **Urban Micro Hubs** | Micro-hub model for local delivery areas |
+| <img src="assets/images/crate_stacking_sop.png" width="180"> | **Crate Stacking SOP** | Handling discipline for fresh produce movement |
+| <img src="assets/images/field_crate_stacking.jpeg" width="180"> | **Field Crate Stacking** | Field-level crate handling visual reference |
+| <img src="assets/images/pass_fail_guide.png" width="180"> | **Pass / Fail Guide** | Quality check and acceptance/rejection logic |
+| <img src="assets/images/temperature_chart.png" width="180"> | **Temperature Chart** | Temperature and freshness management reference |
+
+---
+
+## 📊 Analytics, KPI & Risk Asset Gallery
+
+These visuals support dashboard thinking, KPI planning, wastage control, traceability, and data-led operations.
+
+| Visual | Asset | What It Shows |
+|---|---|---|
+| <img src="assets/images/wastage_infographic.jpeg" width="180"> | **Wastage Infographic** | Wastage control and freshness loss communication |
+| <img src="assets/images/wastage_sensitivity_graph.png" width="180"> | **Wastage Sensitivity Graph** | Relationship between planning accuracy and wastage |
+| <img src="assets/images/traceability_mockup.png" width="180"> | **Traceability Mockup** | Product traceability and source visibility concept |
+| <img src="assets/images/user_journey_map.png" width="180"> | **User Journey Map** | Stakeholder flow and user journey thinking |
+| <img src="assets/images/end_consumer_surfaces.png" width="180"> | **End Consumer Surfaces** | Consumer-facing touchpoints and interaction layers |
+| <img src="assets/images/test.png" width="180"> | **Testing / Experimental Asset** | Supporting visual asset for iteration/testing |
+
+---
+
+## 💬 WhatsApp & Pilot Tech Asset Gallery
+
+These visuals show how Aapla Kisan could be tested through WhatsApp-first, lightweight, or pilot-friendly workflows before building a full app.
+
+| Visual | Asset | What It Shows |
+|---|---|---|
+| <img src="assets/images/whatsapp_pilot_architecture.png" width="180"> | **WhatsApp Pilot Architecture** | WhatsApp-first pilot system concept |
+| <img src="assets/images/b2b_whatsapp_mockup.jpeg" width="180"> | **B2B WhatsApp Mockup** | B2B ordering and communication flow |
+| <img src="assets/images/whatsapp_commerce_wirefram.png" width="180"> | **WhatsApp Commerce Wireframe** | WhatsApp commerce flow and screen concept |
+| <img src="assets/images/farmer_bot_sync_diagram.jpeg" width="180"> | **Farmer Bot Sync Diagram** | Farmer-side bot and data sync concept |
+
+---
+
+## 💼 Operating Model
 
 The platform is built around a dual-demand model.
 
@@ -140,7 +270,7 @@ The platform is built around a dual-demand model.
 
 ---
 
-## End-to-End Workflow
+## 🔁 End-to-End Workflow
 
 ```mermaid
 sequenceDiagram
@@ -162,9 +292,9 @@ sequenceDiagram
 
 ---
 
-## Key Platform Modules
+## 🧩 Key Platform Modules
 
-### Consumer App
+### 📱 Consumer App
 
 Designed for simple fresh produce ordering.
 
@@ -181,7 +311,7 @@ Designed for simple fresh produce ordering.
 
 ---
 
-### Farmer / Vendor App
+### 👨‍🌾 Farmer / Vendor App
 
 Designed for onboarding, stock updates, order handling, and payout transparency.
 
@@ -201,7 +331,7 @@ Designed for onboarding, stock updates, order handling, and payout transparency.
 
 ---
 
-### Admin Panel
+### 🧑‍💼 Admin Panel
 
 Designed for control, monitoring, and governance.
 
@@ -222,7 +352,7 @@ Designed for control, monitoring, and governance.
 
 ---
 
-### Dark Store Platform
+### 🏬 Dark Store Platform
 
 Designed for fulfilment speed, accuracy, and inventory control.
 
@@ -241,7 +371,7 @@ Designed for fulfilment speed, accuracy, and inventory control.
 
 ---
 
-## Pilot Strategy
+## 🚀 Pilot Strategy
 
 Aapla Kisan should be tested through a controlled pilot before scaling.
 
@@ -257,7 +387,7 @@ Aapla Kisan should be tested through a controlled pilot before scaling.
 
 ---
 
-## Pilot Execution Flow
+## 📊 Pilot Execution Flow
 
 ```mermaid
 flowchart LR
@@ -272,7 +402,7 @@ flowchart LR
 
 ---
 
-## Pilot Success Metrics
+## 📈 Pilot Success Metrics
 
 | KPI Category | Metrics |
 |---|---|
@@ -286,7 +416,7 @@ flowchart LR
 
 ---
 
-## Business Value
+## 🏆 Business Value
 
 Aapla Kisan can create value by connecting supply, demand, fulfilment, and governance into one operating model.
 
@@ -301,55 +431,44 @@ Aapla Kisan can create value by connecting supply, demand, fulfilment, and gover
 
 ---
 
-## Skills Demonstrated
+## 🧠 Skills Demonstrated
 
-| Skill Area | Demonstrated Through |
-|---|---|
-| **Business Strategy** | Fresh supply chain model, B2C/B2B planning, value proposition |
-| **Product Strategy** | User roles, product modules, MVP thinking, role-based flows |
-| **UI/UX Thinking** | Bilingual design, mobile-first journeys, operational dashboards |
-| **Operations Planning** | Dark store workflow, inventory, dispatch, QC, SOP logic |
-| **Go-To-Market Thinking** | Pilot-first rollout, demand validation, B2B buyer mapping |
-| **Analytics** | KPI framework, weekly review rhythm, performance metrics |
-| **Documentation** | Public case study, structured project communication, implementation planning |
+This case study demonstrates end-to-end product and operations thinking across 7 skill areas.
 
----
-
-## Repository Roadmap
-
-This repository will be developed in stages.
-
-| Stage | File / Folder | Purpose |
+| Skill Area | Demonstrated Through | Proof Point |
 |---|---|---|
-| **1** | `README.md` | Main case study overview |
-| **2** | `docs/00-design-system-and-ui-guidelines.md` | UI/UX theme, colors, components, and role-based design |
-| **3** | `docs/01-business-model.md` | Detailed business and operating model |
-| **4** | `docs/02-pilot-execution-plan.md` | Pilot execution roadmap |
-| **5** | `docs/03-mvp-feature-list.md` | MVP feature planning |
-| **6** | `wireframes/` | Consumer, farmer/vendor, admin, and dark store PDFs |
-| **7** | `diagrams/` | System architecture and operating flow |
-| **8** | `marketing-assets/` | Public-safe posters and campaign creatives |
+| **Business Strategy** | Fresh supply chain model, B2C/B2B planning, value proposition | [Business Model](docs/01-business-model.md) |
+| **Product Strategy** | User roles, product modules, MVP thinking, role-based flows | [MVP Feature List](docs/03-mvp-feature-list.md) |
+| **UI/UX Thinking** | Bilingual design, mobile-first journeys, operational dashboards | [Design System](docs/00-design-system-and-ui-guidelines.md) + product previews |
+| **Operations Planning** | Dark store workflow, inventory, dispatch, QC, SOP logic | Dark store preview + operations assets |
+| **Go-To-Market Thinking** | Pilot-first rollout, demand validation, B2B buyer mapping | [Pilot Execution Plan](docs/02-pilot-execution-plan.md) |
+| **Analytics** | KPI framework, weekly review rhythm, performance metrics | Dashboard and analytics assets |
+| **Documentation** | Public case study, structured project communication, implementation planning | Multi-doc repo structure |
 
 ---
 
-## Project Status
+## 📊 Project Completion Status
 
-| Component | Status |
-|---|---|
-| Business model | ✅ Drafted |
-| Consumer app screens | ✅ Prepared |
-| Farmer/vendor app screens | ✅ Prepared |
-| Admin panel screens | ✅ Prepared |
-| Dark store screens | ✅ Prepared |
-| System workflow diagram | ✅ Prepared |
-| Public GitHub documentation | 🔄 In progress |
-| Portfolio website integration | ⏳ Pending |
+| Area | Item | Status |
+|---|---|---|
+| **Documentation** | Design system | ✅ Complete |
+| **Documentation** | Business model | ✅ Complete |
+| **Documentation** | Pilot execution plan | ✅ Complete |
+| **Documentation** | MVP feature list | ✅ Complete |
+| **Documentation** | Procurement and pricing model | ✅ Complete |
+| **Visual Assets** | Product previews | ✅ Complete |
+| **Visual Assets** | UI components and dashboard visuals | ✅ Complete |
+| **Visual Assets** | Supply chain and operations images | ✅ Complete |
+| **Wireframes** | Consumer, farmer/vendor, admin, dark store PDFs | 🔄 To link/upload if not already added |
+| **Diagrams** | System flow, supply chain flow, WhatsApp pilot flow | 🔄 To link/upload if not already added |
+| **Portfolio Website** | GitHub Pages case study page | ⏳ Planned |
+| **LinkedIn** | Project announcement post | ⏳ Planned |
 
 ---
 
-## Professional Note
+## 📝 Professional Note
 
-This repository is created as a public portfolio case study to demonstrate product strategy, business analysis, operations planning, UI/UX thinking, and pilot execution design.
+This repository is created as a public portfolio case study to demonstrate product strategy, business analysis, operations planning, UI/UX thinking, pilot execution design, and fresh supply chain systems thinking.
 
 Sensitive client-specific names, private budgets, payment terms, internal proposal details, and confidential implementation terms have been removed or generalized.
 
@@ -357,6 +476,6 @@ Sensitive client-specific names, private budgets, payment terms, internal propos
 
 <div align="center">
 
-### Built as a proof-of-work case study for Digital Growth, Product Strategy, Business Analysis, and Operations Planning.
+### Built as a proof-of-work case study for Digital Growth, Product Strategy, Business Analysis, Operations Planning, and Fresh Supply Chain Execution.
 
 </div>
