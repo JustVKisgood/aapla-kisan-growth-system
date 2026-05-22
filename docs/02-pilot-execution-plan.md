@@ -4,7 +4,7 @@
 
 ### Pilot-Ready Implementation Roadmap for a Fresh Produce Supply Chain Operating System
 
-A structured pilot blueprint to validate demand, supply reliability, quality control, dark store fulfilment, B2C adoption, B2B recurring orders, pricing stability, and KPI-led governance.
+A stage-wise pilot blueprint to validate demand, supply reliability, quality control, dark-store fulfilment, B2C adoption, B2B recurring demand, pricing stability, SOP discipline, and KPI-led governance.
 
 <br>
 
@@ -18,21 +18,25 @@ A structured pilot blueprint to validate demand, supply reliability, quality con
 
 ---
 
+<p align="center">
+  <img src="../assets/images/dashboard_template.png" alt="Aapla Kisan Pilot Dashboard Template" width="850">
+</p>
+
+---
+
 ## 🧭 Executive View
 
 Aapla Kisan should not be scaled as a full platform before validating the operating model on the ground.
 
 Fresh produce businesses are not only technology problems. They are execution-heavy systems where supply, quality, pricing, inventory, fulfilment, delivery, and customer trust must work together daily.
 
-This pilot plan is designed to answer one strategic question:
+This pilot plan answers one strategic question:
 
 > **Can Aapla Kisan create a repeatable fresh produce supply chain model that works for farmers, consumers, B2B buyers, and operations teams?**
 
 ---
 
-## 🎯 Pilot Mission
-
-The pilot will validate whether Aapla Kisan can operate as a structured fresh produce platform with predictable supply, reliable demand, controlled wastage, and repeatable operations.
+# 🎯 Pilot Mission
 
 | Mission Area | What the Pilot Must Prove |
 |---|---|
@@ -47,27 +51,22 @@ The pilot will validate whether Aapla Kisan can operate as a structured fresh pr
 
 ---
 
-## 🧩 Why a Pilot Is Required
+# 📊 Pilot Validation Weightage
 
-Scaling a fresh produce platform without a pilot can lead to over-buying, wastage, stockouts, customer dissatisfaction, weak supplier discipline, and poor unit economics.
-
-A controlled pilot helps validate the business model before major expansion.
-
-| Without Pilot | With Pilot |
-|---|---|
-| Assumption-based decisions | Ground-data-backed decisions |
-| High risk of wastage | Controlled buying and stock movement |
-| Unclear customer repeat behaviour | Measured repeat orders |
-| Unclear supplier reliability | Supplier performance tracking |
-| Weak SOP discipline | Tested operational workflows |
-| Overbuilt technology | MVP based on actual workflow needs |
-| Poor expansion readiness | Repeatable operating playbook |
+```mermaid
+pie title Pilot Validation Focus Areas
+    "Demand Validation" : 20
+    "Supply Reliability" : 20
+    "Quality Control" : 15
+    "Inventory + Wastage" : 15
+    "Dark Store Fulfilment" : 15
+    "Pricing + Finance" : 10
+    "Governance" : 5
+```
 
 ---
 
-## 🏁 Recommended Pilot Scope
-
-Start small. Measure deeply. Expand only after proof.
+# 🏁 Recommended Pilot Scope
 
 | Pilot Area | Recommended Scope |
 |---|---|
@@ -82,7 +81,7 @@ Start small. Measure deeply. Expand only after proof.
 
 ---
 
-## 🗺️ Pilot Execution Map
+# 🗺️ Pilot Execution Map
 
 ```mermaid
 flowchart TD
@@ -100,17 +99,34 @@ flowchart TD
 
 ---
 
+# 📅 Stage-Wise Timeline
+
+```mermaid
+gantt
+    title Aapla Kisan Pilot Execution Timeline
+    dateFormat  YYYY-MM-DD
+    section Planning
+    Phase 0: Scope Freeze           :a1, 2026-02-01, 14d
+    section Research
+    Phase 1: Ground Validation      :a2, after a1, 28d
+    section Blueprint
+    Phase 2: System Design          :a3, after a2, 35d
+    section Readiness
+    Phase 3: SOP + MVP Planning     :a4, after a3, 21d
+    section Launch
+    Phase 4: Dry Run                :a5, after a4, 14d
+    Phase 5: Live Pilot             :a6, after a5, 60d
+```
+
+> Dates are indicative placeholders for roadmap visualization and should be adjusted once the pilot calendar is finalized.
+
+---
+
 # 🧭 Phase 0: Scope Freeze
 
 ## Purpose
 
-Phase 0 creates clarity before execution begins.
-
-This phase prevents scope confusion, shifting priorities, unclear ownership, and uncontrolled decision-making during the pilot.
-
----
-
-## Key Activities
+Phase 0 creates clarity before execution begins and prevents shifting scope, unclear ownership, and uncontrolled decision-making.
 
 | Activity | Strategic Purpose |
 |---|---|
@@ -125,130 +141,24 @@ This phase prevents scope confusion, shifting priorities, unclear ownership, and
 
 ---
 
-## Phase 0 Outputs
-
-| Output | Purpose |
-|---|---|
-| ✅ **Pilot Scope Note** | Defines what is included and excluded |
-| 📊 **Success Metrics Sheet** | Defines how success will be measured |
-| ⚠️ **Initial Risk Register** | Tracks early operational and market risks |
-| 🧑‍💼 **Role Ownership Sheet** | Defines who owns decisions and execution |
-| 🗓️ **Review Calendar** | Sets weekly governance rhythm |
-
----
-
 # 🔍 Phase 1: Ground Validation & Market Research
 
 ## Purpose
 
-Phase 1 checks whether the model is realistic in the selected market.
+Phase 1 validates real demand, supply availability, B2B potential, pricing sensitivity, and competitor gaps before aggressive build-out.
 
-The goal is to validate real demand, supply availability, B2B potential, pricing sensitivity, and competitor gaps before building aggressively.
+<p align="center">
+  <img src="../assets/images/user_journey_map.png" alt="User Journey Map" width="850">
+</p>
 
----
+## Research Streams
 
-## 1. Consumer Demand Validation
-
-### What to Study
-
-| Research Area | Questions to Answer |
-|---|---|
-| 🛒 Buying Behaviour | What do households buy regularly? |
-| 🔁 Frequency | How often do they buy fresh produce? |
-| 💰 Price Sensitivity | What price range feels acceptable? |
-| ✅ Trust Triggers | What makes them trust freshness and quality? |
-| 🚚 Delivery Preference | Do they prefer same-day, next-day, or pre-booking? |
-| 📱 App Readiness | Are they comfortable ordering digitally? |
-| 😟 Current Pain Points | What problems do they face with current options? |
-
-### Expected Output
-
-- Consumer demand reality report
-- Buying frequency insights
-- Trust trigger summary
-- Early customer segment recommendation
-- Pre-booking acceptance insight
-
----
-
-## 2. B2B Buyer Validation
-
-### Target Buyer Segments
-
-| Segment | Potential Need |
-|---|---|
-| 🍽️ Restaurants | Daily vegetables, fruits, staples |
-| ☕ Cafes | Consistent quality and scheduled supply |
-| 🏫 Hostels | Bulk recurring fresh produce |
-| 🛒 Retail Stores | Regular local stock replenishment |
-| 🏢 Institutions | Scheduled supply with records/invoices |
-| 🧑‍🍳 Local Food Businesses | Predictable input cost and quality |
-
-### What to Study
-
-- Daily or weekly fresh produce requirement
-- Quality expectations
-- Delivery timing needs
-- Payment expectations
-- Invoice or record requirements
-- Recurring order potential
-- Existing supplier pain points
-
-### Expected Output
-
-- B2B opportunity notes
-- Recurring order potential
-- Buyer requirement summary
-- Early route feasibility observations
-
----
-
-## 3. Farmer & Vendor Validation
-
-### What to Study
-
-| Validation Area | Why It Matters |
-|---|---|
-| 🌾 Farmer/vendor availability | Determines supply depth |
-| 📦 Expected quantity | Supports procurement planning |
-| 🗓️ Seasonality | Helps forecast supply variation |
-| ✅ Willingness to register | Validates onboarding feasibility |
-| 💰 Expected pricing | Supports pricing model design |
-| 🧾 Payment expectations | Builds farmer/vendor trust |
-| 🥬 Quality readiness | Supports grading and rejection rules |
-| 📍 Collection feasibility | Supports logistics planning |
-
-### Expected Output
-
-- Farmer/vendor supply map
-- Initial sourcing lane recommendation
-- Supplier reliability assessment
-- Collection point feasibility notes
-
----
-
-## 4. Competitor Benchmarking
-
-### What to Study
-
-- Local vegetable vendors
-- Grocery delivery players
-- Mandi/vendor supply patterns
-- Packaging quality
-- Delivery speed
-- Replacement/refund handling
-- Price stability
-- Product freshness
-- Customer trust factors
-
-### Expected Output
-
-| Output | Purpose |
-|---|---|
-| 🕵️ Competitor Reality Report | Shows how the market currently operates |
-| 📉 Market Gap Summary | Identifies where Aapla Kisan can differentiate |
-| 💡 Differentiation Opportunities | Helps shape the value proposition |
-| 📢 Go-To-Market Direction | Guides early pilot communication |
+| Stream | What to Validate | Output |
+|---|---|---|
+| 🧺 Consumer Demand | Buying frequency, trust triggers, price sensitivity, delivery preference | Demand reality report |
+| 🏪 B2B Buyer Discovery | Daily/weekly requirement, quality needs, timing, records, recurrence | B2B opportunity notes |
+| 🌾 Farmer/Vendor Mapping | Supply quantity, seasonality, registration willingness, price expectations | Supply feasibility map |
+| 🕵️ Competitor Benchmarking | Price, packaging, freshness, delivery, replacement/refund | Market gap summary |
 
 ---
 
@@ -258,153 +168,40 @@ The goal is to validate real demand, supply availability, B2B potential, pricing
 
 Phase 2 converts validation into a practical operating model.
 
-The output should not be a generic report. It should become an implementation-ready blueprint.
+<p align="center">
+  <img src="../assets/images/integrated_logistics.png" alt="Integrated Logistics" width="850">
+</p>
 
----
+## Blueprint Components
 
-## 1. Procurement & Pricing Design
-
-### Strategic Decisions
-
-| Decision Area | What Must Be Defined |
+| Blueprint Area | Output |
 |---|---|
-| 🥬 SKU Selection | Which products are included in the pilot |
-| 💰 Fixed-Price Logic | Which items can follow stable rate-card pricing |
-| 📈 Market Linkage | How prices stay connected to real wholesale movement |
-| 🏷️ Grade-Based Pricing | How better quality gets better payout |
-| 📦 Sourcing Lanes | Bulk, local farmer, vendor/mandi bridge |
-| 🔁 Pre-Booking Rules | How demand certainty reduces over-buying |
-| 🧾 B2B Rate Card | How recurring buyers receive structured pricing |
-| 💸 Payment Cycle | How farmer/vendor trust is maintained |
-
----
-
-## 2. Three-Lane Sourcing Model
-
-```mermaid
-flowchart LR
-    A[🥬 Fresh Produce Demand] --> B[Lane 1: Bulk / Stable Items]
-    A --> C[Lane 2: Local Farmers / Short Shelf-Life]
-    A --> D[Lane 3: Vendor / Mandi Bridge]
-    B --> E[Stable Availability]
-    C --> F[Freshness + Local Supply]
-    D --> G[Gap Fill + Backup Supply]
-    E --> H[Dark Store Inventory]
-    F --> H
-    G --> H
-```
-
-| Lane | Use Case | Strategic Benefit |
-|---|---|---|
-| **Lane 1: Bulk / Stable Items** | Higher-volume predictable items | Price stability and procurement control |
-| **Lane 2: Local Farmers** | Short shelf-life produce | Freshness, local sourcing, farmer participation |
-| **Lane 3: Vendor / Mandi Bridge** | Early-stage backup supply | Reliability while network is still building |
-
----
-
-## 3. Operations & SOP Design
-
-### SOP Library
-
-| SOP Area | What It Covers |
-|---|---|
-| 📥 **Receiving SOP** | Stock inward, quantity check, acceptance |
-| ✅ **Quality SOP** | Grading, rejection, photo proof, defect handling |
-| 🏬 **Storage SOP** | Category-wise storage, FIFO/FEFO, rotation |
-| 🧺 **Picking SOP** | Picklist, bin/location, item accuracy |
-| 📦 **Packing SOP** | Package verification and freshness check |
-| 🚚 **Dispatch SOP** | Rider handover, batching, SLA tracking |
-| 🔁 **Returns SOP** | Replacement, refund, rejection, wastage logging |
-| 🎧 **Support SOP** | Complaints, escalations, root-cause feedback |
-
----
-
-## 4. Collection Center Design
-
-### Collection Center Role
-
-Collection centers reduce chaos at the supply side and create a structured inbound flow for the hub/dark store.
-
-| Function | Description |
-|---|---|
-| 🌾 Farmer/vendor registration | Captures supplier information |
-| ⚖️ Weighing and records | Tracks quantity and supply |
-| 🥬 Basic sorting | Separates usable and unusable produce |
-| ✅ Quality acceptance | Records accepted/rejected stock |
-| 🧑‍🌾 Agent coordination | Handles local supplier communication |
-| 💰 Payment support | Supports trust and dispute handling |
-
----
-
-## 5. Tech Enablement Mapping
-
-The technology should support the operating model without overengineering the pilot.
-
-| Product Layer | Pilot Role |
-|---|---|
-| 📱 **Consumer App** | Ordering, delivery slot, tracking, order history |
-| 👨‍🌾 **Farmer / Vendor App** | Onboarding, KYC, product listing, stock update, payout |
-| 🧑‍💼 **Admin Panel** | Approvals, orders, pricing, categories, reports |
-| 🏬 **Dark Store Platform** | Picklist, packing, dispatch, inventory, exceptions |
-
-### Key Outputs
-
-- MVP feature map
-- Role-based workflows
-- Data field requirements
-- Dashboard requirements
-- Integration assumptions
+| Procurement & Pricing | 3-lane sourcing, fixed + market-linked pricing, pre-booking rules |
+| Operations SOP | Receiving, QC, storage, picking, packing, dispatch, returns |
+| Collection Center | Registration, weighing, sorting, grading, batch movement |
+| Tech Enablement | Role-based workflows, data fields, dashboard requirements |
+| Governance | KPI scorecard, weekly review cadence, risk register |
 
 ---
 
 # 🧾 Phase 3: SOP, MVP & Operations Planning
 
-## Purpose
-
-Phase 3 prepares the pilot for execution.
-
-This is where the operating model becomes a practical launch checklist.
-
----
-
-## MVP Readiness Checklist
-
 | Area | Required Before Pilot |
 |---|---|
-| 🧺 **Customer Journey** | Customer can browse, order, select delivery, and track |
-| 🌾 **Supplier Journey** | Farmer/vendor can register, list produce, and update stock |
-| 🧑‍💼 **Admin Flow** | Admin can approve, monitor, manage products and orders |
-| 🏬 **Dark Store Flow** | Team can pick, pack, dispatch, and update inventory |
-| 🎧 **Support Flow** | Complaints, replacements, and refunds have a clear process |
-| 📊 **KPI Flow** | Weekly dashboard and issue tracking are ready |
-
----
-
-## Operational Readiness Checklist
-
-- [ ] Pilot geography finalized
-- [ ] Initial farmers/vendors shortlisted
-- [ ] B2B buyers shortlisted
-- [ ] SKU catalog finalized
-- [ ] Pricing logic defined
-- [ ] Quality grading checklist ready
-- [ ] Dark store process mapped
-- [ ] Inventory tracking process ready
-- [ ] Delivery zones and batching logic defined
-- [ ] Customer support process ready
-- [ ] Weekly review structure defined
+| 🧺 Customer Journey | Customer can browse, order, select delivery, and track |
+| 🌾 Supplier Journey | Farmer/vendor can register, list produce, and update stock |
+| 🧑‍💼 Admin Flow | Admin can approve, monitor, manage products and orders |
+| 🏬 Dark Store Flow | Team can pick, pack, dispatch, and update inventory |
+| 🎧 Support Flow | Complaints, replacements, and refunds have a clear process |
+| 📊 KPI Flow | Weekly dashboard and issue tracking are ready |
 
 ---
 
 # 🧪 Phase 4: Pilot Dry Run
 
-## Purpose
-
-The dry run tests the complete workflow before real launch.
-
-It helps identify operational gaps before customers experience them.
-
----
+<p align="center">
+  <img src="../assets/images/whatsapp_pilot_architecture.png" alt="WhatsApp Pilot Architecture" width="850">
+</p>
 
 ## Dry Run Flow
 
@@ -423,45 +220,7 @@ flowchart LR
 
 ---
 
-## What to Test
-
-| Workflow | What to Check |
-|---|---|
-| 🌾 **Supply** | Can produce quantity and timing be captured properly? |
-| ✅ **Quality** | Can produce be graded and accepted/rejected clearly? |
-| 🏬 **Inventory** | Can stock inward and stock adjustment be tracked? |
-| 🧺 **Orders** | Can orders be allocated correctly? |
-| 📋 **Picking** | Can the team follow picklists accurately? |
-| 📦 **Packing** | Can items be verified before dispatch? |
-| 🚚 **Dispatch** | Can handover and delivery tracking work? |
-| 🎧 **Support** | Can issues be recorded and resolved? |
-| 📊 **Reporting** | Can KPIs be reviewed weekly? |
-
----
-
-## Dry Run Outputs
-
-| Output | Purpose |
-|---|---|
-| ⚠️ Issue List | Captures gaps found during simulation |
-| 🔧 Process Corrections | Fixes workflow errors |
-| 🧾 SOP Improvements | Updates operating instructions |
-| 👥 Training Needs | Identifies team readiness gaps |
-| ✅ Final Launch Checklist | Confirms go-live readiness |
-
----
-
 # 🚀 Phase 5: Live Pilot Launch
-
-## Purpose
-
-The live pilot tests the model with real users and real operating pressure.
-
-Start with controlled volume. Increase only after the system proves reliability.
-
----
-
-## Launch Playbook
 
 | Launch Period | Focus |
 |---|---|
@@ -476,9 +235,13 @@ Start with controlled volume. Increase only after the system proves reliability.
 
 # 📊 KPI Command Center
 
-A weekly review rhythm is essential to keep the pilot under control.
-
-## KPI Dashboard Areas
+```mermaid
+xyChart-beta
+    title "Pilot KPI Target Dashboard"
+    x-axis ["Fulfilment", "On-Time", "Supplier", "B2B Repeat", "Stockout Control", "Wastage Control"]
+    y-axis "Target %" 0 --> 100
+    bar [90, 85, 80, 60, 93, 90]
+```
 
 | KPI Category | Metrics |
 |---|---|
@@ -489,16 +252,6 @@ A weekly review rhythm is essential to keep the pilot under control.
 | ⚙️ **Operations** | Picking time, packing time, dispatch time, fulfilment rate |
 | 🚚 **Delivery** | On-time delivery, delayed orders, failed deliveries |
 | 💰 **Finance** | Procurement variance, margin, delivery cost per order |
-
----
-
-## Governance Rhythm
-
-| Frequency | Review Focus |
-|---|---|
-| **Daily** | Order issues, complaints, stockouts, delivery delays |
-| **Weekly** | KPI review, supplier performance, fill rate, wastage |
-| **Monthly** | Pilot health, customer retention, B2B consistency, expansion readiness |
 
 ---
 
@@ -519,43 +272,7 @@ A weekly review rhythm is essential to keep the pilot under control.
 
 # ✅ Pilot Success Criteria
 
-The pilot can be considered successful if it proves:
-
-- Repeat B2C customer ordering
-- Recurring B2B demand
-- Reliable farmer/vendor supply
-- Controlled wastage
-- Stable pricing logic
-- Clear inventory visibility
-- Acceptable fulfilment rate
-- Manageable delivery cost
-- Positive customer feedback
-- SOPs that can be repeated in another zone
-
----
-
-# 📈 Expansion Readiness Gate
-
-Aapla Kisan should expand only after the pilot proves the following:
-
-| Readiness Area | Expansion Condition |
-|---|---|
-| 🧺 **Demand** | Repeat orders are visible |
-| 🌾 **Supply** | Farmer/vendor reliability is stable |
-| ✅ **Quality** | Rejection and complaint rates are controlled |
-| 🏬 **Inventory** | Wastage and stockouts are measurable and manageable |
-| ⚙️ **Operations** | SOPs are followed consistently |
-| 🏪 **B2B** | Recurring buyers show stable order behaviour |
-| 📱 **Technology** | MVP requirements are validated by real usage |
-| 📊 **Governance** | Weekly KPI system supports decision-making |
-
----
-
-# 🧠 Consultant View
-
-The Aapla Kisan pilot should be treated as an operating model validation project.
-
-The goal is not only to test whether users can order vegetables online. The real goal is to prove whether supply, demand, quality, pricing, inventory, fulfilment, and governance can function together as a repeatable business system.
+The pilot can be considered successful if it proves repeat B2C ordering, recurring B2B demand, reliable farmer/vendor supply, controlled wastage, stable pricing logic, clear inventory visibility, acceptable fulfilment rate, manageable delivery cost, and SOPs that can be repeated in another zone.
 
 ---
 
@@ -569,20 +286,10 @@ The goal is not only to test whether users can order vegetables online. The real
 | **Go-To-Market Thinking** | Controlled rollout, demand validation, B2B buyer testing |
 | **Analytics** | KPI dashboard planning and weekly review model |
 | **Supply Chain Thinking** | Procurement, grading, inventory, wastage, dispatch |
-| **Consulting Documentation** | Public-safe, structured, implementation-ready planning |
+| **Data Visualization** | Gantt roadmap, KPI bar chart, validation pie chart, flow diagrams |
 
 ---
 
 # 📝 Public Portfolio Note
 
-This is a public-safe pilot execution plan created for portfolio presentation.
-
-Client-specific names, private budgets, payment terms, commercial proposal details, and confidential implementation terms have been removed or generalized.
-
----
-
-<div align="center">
-
-### Built as a proof-of-work consulting case study for Product Strategy, Business Analysis, Operations Planning, and Fresh Supply Chain Execution.
-
-</div>
+This is a public-safe pilot execution plan created for portfolio presentation. Visual KPI values are planning targets and not actual pilot results.
