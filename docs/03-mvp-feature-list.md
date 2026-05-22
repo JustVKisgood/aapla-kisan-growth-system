@@ -4,13 +4,13 @@
 
 ### Minimum Viable Product Scope for Fresh Supply Chain Pilot Execution
 
-A practical MVP feature map for launching Aapla Kisan as a controlled pilot across consumers, farmers/vendors, admin teams, and dark store operations.
+A visual MVP planning document for launching Aapla Kisan as a controlled pilot across consumers, farmers/vendors, admin teams, and dark-store operations.
 
 <br>
 
 ![Status](https://img.shields.io/badge/Status-MVP%20Planning-1E7A34)
 ![Scope](https://img.shields.io/badge/Scope-Pilot%20Ready-2563EB)
-![Users](https://img.shields.io/badge/Users-4%20Core%20Roles-2E8B57)
+![Users](https://img.shields.io/badge/Users-4%20Core%20Product%20Layers-2E8B57)
 ![Priority](https://img.shields.io/badge/Priority-Day%201%20vs%20Phase%202-F59E0B)
 ![Portfolio](https://img.shields.io/badge/Portfolio-Product%20Strategy%20Case%20Study-6B7280)
 
@@ -18,48 +18,63 @@ A practical MVP feature map for launching Aapla Kisan as a controlled pilot acro
 
 ---
 
-## 🧭 MVP Philosophy
-
-The Aapla Kisan MVP should not try to build every feature from day one.
-
-The goal of the MVP is to validate the fresh produce operating model with the minimum set of features required to manage:
-
-- Supply declaration
-- Farmer/vendor onboarding
-- Product listing
-- Consumer ordering
-- B2B ordering
-- Inventory visibility
-- Dark store fulfilment
-- Admin approvals
-- Quality control
-- Pilot KPI tracking
-
-The MVP should help answer one core question:
-
-> **Can Aapla Kisan run a controlled fresh produce supply chain pilot with real users, real suppliers, real orders, and measurable operational performance?**
+<p align="center">
+  <img src="../assets/images/aapla-kisan-hero-preview.png" alt="Aapla Kisan MVP Product Preview" width="900">
+</p>
 
 ---
 
-## 🎯 MVP Objective
+## 🧭 MVP Philosophy
 
-The MVP should support a pilot where the team can:
+The Aapla Kisan MVP should not try to build every possible feature from day one.
 
-| Objective | Why It Matters |
-|---|---|
-| 🌾 Onboard farmers/vendors | Build the supply base |
-| 🥬 List and manage products | Create sellable fresh produce catalog |
-| 🧺 Accept consumer orders | Validate B2C demand |
-| 🏪 Handle B2B requirements | Validate recurring bulk demand |
-| 🏬 Manage dark store fulfilment | Execute picking, packing, dispatch |
-| 🧑‍💼 Give admin control | Manage approvals, products, orders, and reports |
-| 📊 Track KPIs | Measure fulfilment, wastage, quality, and repeat demand |
+The goal is to validate the fresh produce operating model with the minimum feature set required to manage:
+
+- 🌾 Supplier onboarding and supply declaration
+- 🥬 Product listing and stock visibility
+- 🧺 Consumer ordering and delivery tracking
+- 🏪 B2B recurring order capture
+- 🏬 Dark-store fulfilment
+- 🧑‍💼 Admin approvals and governance
+- ✅ Quality control and exception handling
+- 📊 Pilot KPI tracking
+
+The MVP should answer one core question:
+
+> **Can Aapla Kisan run a controlled fresh produce pilot with real users, real suppliers, real orders, and measurable operational performance?**
+
+---
+
+# 📊 Product Layer Screen Coverage
+
+These are repository-based planning metrics derived from the uploaded wireframe previews.
+
+| Product Layer | Screen Coverage | MVP Role |
+|---|---:|---|
+| 📱 Consumer App | 15 | Browse, order, checkout, track, repeat |
+| 👨‍🌾 Farmer / Vendor App | 10 | Register, list, update stock, payout |
+| 🧑‍💼 Admin Panel | 9 | Approve, monitor, control pricing, manage reports |
+| 🏬 Dark Store Platform | 6 | Pick, pack, dispatch, update inventory |
+
+```mermaid
+xyChart-beta
+    title "MVP Wireframe Coverage by Product Layer"
+    x-axis ["Consumer", "Farmer/Vendor", "Admin", "Dark Store"]
+    y-axis "Screens" 0 --> 16
+    bar [15, 10, 9, 6]
+```
+
+```mermaid
+pie title MVP Screen Coverage Distribution
+    "Consumer App" : 15
+    "Farmer / Vendor App" : 10
+    "Admin Panel" : 9
+    "Dark Store Platform" : 6
+```
 
 ---
 
 # 🏗️ Product Architecture
-
-Aapla Kisan MVP is divided into four core product layers.
 
 ```mermaid
 flowchart TD
@@ -78,15 +93,15 @@ flowchart TD
 
 # 📱 1. Consumer App MVP
 
+<p align="center">
+  <img src="../assets/images/consumer-app-preview.png" alt="Consumer App Preview" width="850">
+</p>
+
 ## Purpose
 
 The consumer app should allow users to discover fresh produce, place orders, select delivery details, and track order status.
 
-The consumer MVP should be simple, mobile-first, and trust-building.
-
----
-
-## Day 1 MVP Features
+## Day 1 Features
 
 | Feature | Priority | Purpose |
 |---|---|---|
@@ -95,7 +110,7 @@ The consumer MVP should be simple, mobile-first, and trust-building.
 | 👤 Profile Setup | Must Have | Captures name, area, pincode |
 | 📍 Location Selection | Must Have | Confirms delivery area |
 | 🏠 Home / Landing Page | Must Have | Shows fresh produce categories and offers |
-| 🥬 Product Categories | Must Have | Helps users browse fruits, vegetables, premium items |
+| 🥬 Product Categories | Must Have | Helps users browse fruits and vegetables |
 | 🛒 Product Listing | Must Have | Shows product name, image, price, unit |
 | ➕ Add to Cart | Must Have | Enables order building |
 | 🧾 Cart Review | Must Have | Lets users confirm quantity and items |
@@ -103,8 +118,6 @@ The consumer MVP should be simple, mobile-first, and trust-building.
 | ✅ Order Confirmation | Must Have | Confirms order successfully |
 | 📍 Order Tracking Status | Must Have | Builds trust through visibility |
 | 📜 Order History | Should Have | Supports repeat behaviour |
-
----
 
 ## Phase 2 Consumer Features
 
@@ -120,30 +133,17 @@ The consumer MVP should be simple, mobile-first, and trust-building.
 
 ---
 
-## Consumer MVP Success Metrics
-
-| Metric | Why It Matters |
-|---|---|
-| Total consumer orders | Measures demand |
-| Repeat order rate | Measures retention |
-| Average order value | Measures commercial potential |
-| Cart abandonment | Measures UX friction |
-| Delivery slot selection rate | Measures planning adoption |
-| Complaint rate | Measures quality and service experience |
-
----
-
 # 👨‍🌾 2. Farmer / Vendor App MVP
+
+<p align="center">
+  <img src="../assets/images/farmer-vendor-app-preview.png" alt="Farmer Vendor App Preview" width="850">
+</p>
 
 ## Purpose
 
 The farmer/vendor app should help suppliers register, share business details, upload products, update stock, manage order requests, and view payout information.
 
-The MVP should be simple enough for non-technical users and clear enough to support operational planning.
-
----
-
-## Day 1 MVP Features
+## Day 1 Features
 
 | Feature | Priority | Purpose |
 |---|---|---|
@@ -166,44 +166,17 @@ The MVP should be simple enough for non-technical users and clear enough to supp
 
 ---
 
-## Phase 2 Farmer / Vendor Features
-
-| Feature | Priority | Purpose |
-|---|---|---|
-| 📈 Sales Report | Should Have | Helps supplier understand performance |
-| 🔔 Stock Reminder Alerts | Could Have | Improves stock update discipline |
-| 🏷️ Grade-Based Pricing | Should Have | Rewards better quality |
-| 📆 Harvest Declaration Calendar | Should Have | Improves predictive supply |
-| 🚚 Delivery / Handover Plan | Should Have | Improves logistics coordination |
-| 🏆 Supplier Reliability Score | Could Have | Supports long-term supplier ranking |
-| 💬 In-App Communication | Could Have | Improves coordination with ops/admin |
-
----
-
-## Farmer / Vendor MVP Success Metrics
-
-| Metric | Why It Matters |
-|---|---|
-| Number of registered suppliers | Measures supply network growth |
-| Approval completion rate | Measures onboarding quality |
-| Active supplier count | Measures actual participation |
-| Stock update frequency | Measures supply visibility |
-| Declared vs actual supply | Measures reliability |
-| Supplier payout issues | Measures trust and process quality |
-
----
-
 # 🧑‍💼 3. Admin Panel MVP
+
+<p align="center">
+  <img src="../assets/images/admin-panel-preview.png" alt="Admin Panel Preview" width="850">
+</p>
 
 ## Purpose
 
-The admin panel is the control center of the platform.
+The admin panel is the control center of the platform. It should help the team approve users, manage products, monitor orders, control pricing, view reports, and handle operational issues.
 
-It should help the team approve users, manage products, monitor orders, control pricing, view reports, and handle operational issues.
-
----
-
-## Day 1 MVP Features
+## Day 1 Features
 
 | Feature | Priority | Purpose |
 |---|---|---|
@@ -223,44 +196,17 @@ It should help the team approve users, manage products, monitor orders, control 
 
 ---
 
-## Phase 2 Admin Features
-
-| Feature | Priority | Purpose |
-|---|---|---|
-| 📢 Broadcast Notifications | Could Have | Send updates to users/suppliers |
-| 🎟️ Promo / Banner Management | Could Have | Support marketing campaigns |
-| 📈 Advanced Analytics | Should Have | Improve decision-making |
-| 🏆 Supplier Scorecards | Should Have | Track reliable suppliers |
-| 🚚 Route / Delivery Planning | Should Have | Improve dispatch efficiency |
-| 🧾 Invoice / B2B Billing | Should Have | Support business buyers |
-| ⚠️ Risk Dashboard | Could Have | Track stock, SLA, supplier, and finance risks |
-
----
-
-## Admin MVP Success Metrics
-
-| Metric | Why It Matters |
-|---|---|
-| Approval turnaround time | Measures admin efficiency |
-| Product update accuracy | Measures catalog quality |
-| Order monitoring accuracy | Measures operational control |
-| Issue resolution time | Measures support quality |
-| Pricing update accuracy | Measures commercial control |
-| Report availability | Measures decision readiness |
-
----
-
 # 🏬 4. Dark Store Platform MVP
+
+<p align="center">
+  <img src="../assets/images/dark-store-preview.png" alt="Dark Store Platform Preview" width="850">
+</p>
 
 ## Purpose
 
 The dark store platform should help the operations team manage order queues, picking, packing, stock exceptions, dispatch, handover, inventory, and returns.
 
-This layer is critical because fresh produce success depends heavily on fulfilment accuracy.
-
----
-
-## Day 1 MVP Features
+## Day 1 Features
 
 | Feature | Priority | Purpose |
 |---|---|---|
@@ -280,36 +226,20 @@ This layer is critical because fresh produce success depends heavily on fulfilme
 
 ---
 
-## Phase 2 Dark Store Features
+# 📊 Feature Priority Distribution
 
-| Feature | Priority | Purpose |
-|---|---|---|
-| 📍 Bin Location Mapping | Should Have | Improves picking speed |
-| ⏱️ SLA Timer Alerts | Should Have | Prevents fulfilment delays |
-| 📷 Packing Photo Proof | Could Have | Improves dispute resolution |
-| 🧾 Batch Dispatch Planning | Should Have | Improves delivery efficiency |
-| 🧊 Storage Condition Logs | Could Have | Supports quality control |
-| 📉 Wastage Reason Tracking | Should Have | Reduces spoilage over time |
-| 📦 SKU Ageing Report | Should Have | Supports FIFO/FEFO discipline |
+```mermaid
+pie title MVP Priority Distribution
+    "Must Have" : 65
+    "Should Have" : 25
+    "Could Have" : 10
+```
 
----
-
-## Dark Store MVP Success Metrics
-
-| Metric | Why It Matters |
-|---|---|
-| Picking time | Measures operational speed |
-| Packing accuracy | Measures order quality |
-| Dispatch time | Measures fulfilment readiness |
-| Stockout incidents | Measures inventory accuracy |
-| Returns rate | Measures quality and fulfilment issues |
-| Wastage percentage | Measures fresh supply chain control |
+> Priority values are planning weights for MVP communication and should be revised during final sprint planning.
 
 ---
 
 # 🔗 Cross-Platform Data Requirements
-
-The MVP should capture the minimum data required to run the pilot.
 
 | Data Area | Required Fields |
 |---|---|
@@ -345,22 +275,7 @@ sequenceDiagram
 
 ---
 
-# 📊 MVP Priority Matrix
-
-| Priority Level | Meaning | Examples |
-|---|---|---|
-| ✅ **Must Have** | Required for Day 1 pilot | Login, onboarding, product listing, order placement, picklist, dispatch |
-| 🟡 **Should Have** | Important but can be improved after launch | Reports, payout summary, returns, supplier score |
-| 🔵 **Could Have** | Useful for later experience improvement | Promo codes, wishlist, advanced analytics, photo proof |
-| ⚪ **Later** | Not needed for pilot validation | Loyalty system, advanced AI forecasting, marketplace expansion |
-
----
-
 # 🚦 Build vs Manual Decision
-
-Not everything should be built immediately.
-
-Some processes can start manually during the pilot to avoid overbuilding.
 
 | Process | MVP Approach |
 |---|---|
@@ -377,8 +292,6 @@ Some processes can start manually during the pilot to avoid overbuilding.
 
 # 🏁 MVP Launch Readiness Checklist
 
-Before launch, the MVP should have:
-
 - [ ] Consumer can register and place an order
 - [ ] Farmer/vendor can register and add products
 - [ ] Admin can approve users and manage products
@@ -393,26 +306,6 @@ Before launch, the MVP should have:
 
 ---
 
-# 🧠 Consultant View
-
-The Aapla Kisan MVP should be treated as an operating model validation tool, not a complete product from day one.
-
-The first version should prove:
-
-- Can suppliers onboard?
-- Can stock be declared?
-- Can products be listed?
-- Can customers order?
-- Can B2B demand be captured?
-- Can the dark store fulfil orders?
-- Can admins control the system?
-- Can the team track KPIs?
-- Can the model reduce wastage and improve reliability?
-
-Once these are proven, advanced features can be added with confidence.
-
----
-
 # 🏆 Skills Demonstrated
 
 | Skill Area | Demonstrated Through |
@@ -422,21 +315,11 @@ Once these are proven, advanced features can be added with confidence.
 | **UI/UX Thinking** | Role-based journeys, mobile-first screens, bilingual interface |
 | **Operations Planning** | Dark store workflow, order processing, stock handling |
 | **Supply Chain Thinking** | Supplier onboarding, quality, inventory, fulfilment |
-| **Go-To-Market Thinking** | Pilot-first feature selection and phased rollout |
 | **Analytics Thinking** | MVP KPIs, success metrics, dashboard readiness |
+| **Data Visualization** | Screen coverage bar chart, priority pie chart, product architecture map |
 
 ---
 
 # 📝 Public Portfolio Note
 
-This document is a public-safe MVP feature plan created for portfolio presentation.
-
-Client-specific names, private budgets, payment terms, commercial proposal details, and confidential implementation terms have been removed or generalized.
-
----
-
-<div align="center">
-
-### Built as a proof-of-work product strategy document for MVP planning, business analysis, and fresh supply chain execution.
-
-</div>
+This document is a public-safe MVP feature plan created for portfolio presentation. Feature priorities and chart values are planning assumptions and should be revised during final product sprint planning.
