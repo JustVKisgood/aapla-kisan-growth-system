@@ -6,7 +6,7 @@
 
 A proof-of-work portfolio case study for designing a **farm-to-consumer + farm-to-business fresh produce platform** connecting farmers, vendors, collection points, dark stores, consumers, and B2B buyers.
 
-The project demonstrates product strategy, business analysis, UI/UX thinking, operations planning, SOP design, pilot execution, and data-led supply chain decision-making.
+The project demonstrates product strategy, business analysis, UI/UX thinking, operations planning, SOP design, stakeholder journey mapping, pilot execution, and data-led supply chain decision-making.
 
 <br>
 
@@ -19,11 +19,13 @@ The project demonstrates product strategy, business analysis, UI/UX thinking, op
 <br>
 
 **Quick Links:**  
-[📘 Business Model](docs/01-business-model.md) •
 [🎨 Design System](docs/00-design-system-and-ui-guidelines.md) •
+[📘 Business Model](docs/01-business-model.md) •
 [🚀 Pilot Plan](docs/02-pilot-execution-plan.md) •
 [🧩 MVP Features](docs/03-mvp-feature-list.md) •
 [💰 Procurement Model](docs/04-procurement-and-pricing-model.md) •
+[🧾 SOP & Operations](docs/05-sop-and-operations-design.md) •
+[🗺️ Stakeholder Journeys](docs/06-stakeholder-journey-maps.md) •
 [🖼️ Visual Assets](assets/images)
 
 </div>
@@ -45,7 +47,7 @@ The project demonstrates product strategy, business analysis, UI/UX thinking, op
 | **Core Model** | B2C fresh produce ordering + B2B recurring supply |
 | **Primary Users** | Farmers, Vendors, Consumers, B2B Buyers, Admin Team, Dark Store Operators |
 | **Strategic Goal** | Predictable quality, predictable pricing, lower wastage, and reliable fulfilment |
-| **Portfolio Focus** | Business analysis, product thinking, operations design, UI/UX planning, pilot strategy |
+| **Portfolio Focus** | Business analysis, product thinking, operations design, UI/UX planning, SOPs, stakeholder journeys, pilot strategy |
 
 ---
 
@@ -76,6 +78,8 @@ The case study explores how a structured platform can improve:
 - B2B recurring supply
 - Dark store inventory control
 - Admin governance and reporting
+- SOP-led operational discipline
+- Stakeholder journey clarity
 - KPI-based pilot execution
 
 ---
@@ -89,8 +93,8 @@ Fresh produce supply chains are difficult to scale because they are affected by 
 | **Farmers / Vendors** | Uncertain demand, price volatility, limited structured buyer access | Onboarding, supply declaration, pricing logic, payout visibility |
 | **Consumers** | Inconsistent quality, fluctuating prices, limited freshness trust | Clear product listing, delivery slot, order tracking, quality promise |
 | **B2B Buyers** | Daily supply inconsistency, quality variation, procurement uncertainty | Recurring order model, rate-card logic, scheduled dispatch |
-| **Operations Team** | Stockouts, wastage, dispatch delays, weak inventory visibility | Dark store dashboard, picklist, stock inward, dispatch queue |
-| **Platform Team** | Need for governance, dashboards, SOPs, and role-based workflows | Admin panel, KPI tracking, approvals, reports, permissions |
+| **Operations Team** | Stockouts, wastage, dispatch delays, weak inventory visibility | Dark store dashboard, picklist, stock inward, dispatch queue, SOP rhythm |
+| **Platform Team** | Need for governance, dashboards, SOPs, and role-based workflows | Admin panel, KPI tracking, approvals, reports, permissions, journey mapping |
 
 ---
 
@@ -143,7 +147,9 @@ aapla-kisan-growth-system/
 │   ├── 01-business-model.md
 │   ├── 02-pilot-execution-plan.md
 │   ├── 03-mvp-feature-list.md
-│   └── 04-procurement-and-pricing-model.md
+│   ├── 04-procurement-and-pricing-model.md
+│   ├── 05-sop-and-operations-design.md
+│   └── 06-stakeholder-journey-maps.md
 │
 ├── wireframes/
 │   ├── consumer-app.pdf
@@ -161,6 +167,20 @@ aapla-kisan-growth-system/
     ├── posters-en/
     └── posters-mr/
 ```
+
+---
+
+## 📚 Documentation Library
+
+| Document | Purpose | Link |
+|---|---|---|
+| 🎨 **Design System & UI/UX Guidelines** | Defines visual identity, typography, components, role-based UX, and accessibility direction | [Open](docs/00-design-system-and-ui-guidelines.md) |
+| 📘 **Business Model** | Explains the farm-to-consumer + farm-to-business operating model | [Open](docs/01-business-model.md) |
+| 🚀 **Pilot Execution Plan** | Converts the idea into a phase-wise pilot roadmap | [Open](docs/02-pilot-execution-plan.md) |
+| 🧩 **MVP Feature List** | Prioritizes Day 1, Phase 2, and later features across all product layers | [Open](docs/03-mvp-feature-list.md) |
+| 💰 **Procurement & Pricing Model** | Explains sourcing lanes, fixed + market-linked pricing, inventory health, and risk controls | [Open](docs/04-procurement-and-pricing-model.md) |
+| 🧾 **SOP & Operations Design** | Defines sourcing, QC, collection center, dark store, wastage, dispatch, and KPI operating routines | [Open](docs/05-sop-and-operations-design.md) |
+| 🗺️ **Stakeholder Journey Maps** | Maps farmer, vendor, agent, dark store, B2C, B2B, and admin journeys with KPI links | [Open](docs/06-stakeholder-journey-maps.md) |
 
 ---
 
@@ -427,21 +447,24 @@ Aapla Kisan can create value by connecting supply, demand, fulfilment, and gover
 | **Digital Grading** | Better trust and quality consistency |
 | **Dark Store Control** | Faster picking, packing, dispatch, and inventory tracking |
 | **B2C + B2B Engine** | Reduced dependency on only one customer segment |
-| **KPI Governance** | Better control over wastage, stockouts, fulfilment, and margins |
+| **SOP Governance** | Repeatable operations across collection, QC, inventory, packing, dispatch, and issue handling |
+| **KPI Governance** | Better control over wastage, stockouts, fulfilment, supplier reliability, and margins |
 
 ---
 
 ## 🧠 Skills Demonstrated
 
-This case study demonstrates end-to-end product and operations thinking across 7 skill areas.
+This case study demonstrates end-to-end product and operations thinking across 9 skill areas.
 
 | Skill Area | Demonstrated Through | Proof Point |
 |---|---|---|
 | **Business Strategy** | Fresh supply chain model, B2C/B2B planning, value proposition | [Business Model](docs/01-business-model.md) |
 | **Product Strategy** | User roles, product modules, MVP thinking, role-based flows | [MVP Feature List](docs/03-mvp-feature-list.md) |
 | **UI/UX Thinking** | Bilingual design, mobile-first journeys, operational dashboards | [Design System](docs/00-design-system-and-ui-guidelines.md) + product previews |
-| **Operations Planning** | Dark store workflow, inventory, dispatch, QC, SOP logic | Dark store preview + operations assets |
+| **Operations Planning** | Dark store workflow, inventory, dispatch, QC, SOP logic | [SOP & Operations Design](docs/05-sop-and-operations-design.md) |
+| **Stakeholder Mapping** | Farmer, vendor, agent, consumer, B2B, admin, and dark-store journeys | [Stakeholder Journey Maps](docs/06-stakeholder-journey-maps.md) |
 | **Go-To-Market Thinking** | Pilot-first rollout, demand validation, B2B buyer mapping | [Pilot Execution Plan](docs/02-pilot-execution-plan.md) |
+| **Procurement Strategy** | 3-lane sourcing, pricing governance, pre-booking, inventory health | [Procurement & Pricing Model](docs/04-procurement-and-pricing-model.md) |
 | **Analytics** | KPI framework, weekly review rhythm, performance metrics | Dashboard and analytics assets |
 | **Documentation** | Public case study, structured project communication, implementation planning | Multi-doc repo structure |
 
@@ -456,6 +479,8 @@ This case study demonstrates end-to-end product and operations thinking across 7
 | **Documentation** | Pilot execution plan | ✅ Complete |
 | **Documentation** | MVP feature list | ✅ Complete |
 | **Documentation** | Procurement and pricing model | ✅ Complete |
+| **Documentation** | SOP and operations design | ✅ Complete |
+| **Documentation** | Stakeholder journey maps | ✅ Complete |
 | **Visual Assets** | Product previews | ✅ Complete |
 | **Visual Assets** | UI components and dashboard visuals | ✅ Complete |
 | **Visual Assets** | Supply chain and operations images | ✅ Complete |
@@ -468,7 +493,7 @@ This case study demonstrates end-to-end product and operations thinking across 7
 
 ## 📝 Professional Note
 
-This repository is created as a public portfolio case study to demonstrate product strategy, business analysis, operations planning, UI/UX thinking, pilot execution design, and fresh supply chain systems thinking.
+This repository is created as a public portfolio case study to demonstrate product strategy, business analysis, operations planning, UI/UX thinking, SOP design, stakeholder journey mapping, pilot execution design, and fresh supply chain systems thinking.
 
 Sensitive client-specific names, private budgets, payment terms, internal proposal details, and confidential implementation terms have been removed or generalized.
 
